@@ -1,0 +1,44 @@
+// Override the default blueprint to use % widths
+@mixin column-base {
+    margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
+    * html & {
+      overflow-x: hidden;
+    } 
+}
+
+// Override the default blueprint to use % widths
+@mixin column($n) {
+  width: (span($n)/$blueprint-container-size)*100%;
+}
+
+// setup the grid
+@mixin grid {
+  // A container should group all your columns
+  .container {
+    @include container;
+  }
+
+  // setup common attributes for the columns
+  .column {
+    @include column-base; 
+  }
+
+  // Create the grid using the variables defined in _base.scss
+  @for $n from 1 to $blueprint-grid-columns {
+    .span-#{$n} {
+      @extend .column;
+      @include column($n);
+    }
+  }
+  .span-#{$blueprint-grid-columns} {
+    @extend .column;
+    width: (span($blueprint-grid-columns)/$blueprint-container-size)*100%;
+    @include last; 
+  }
+}
+
+// Configure fixed width text for mono-spaced fonts (eg for code snippets)
+@mixin fixed-width-text {
+  font: 1em $blueprint-fixed-font-family;
+  line-height: 1.5; 
+}

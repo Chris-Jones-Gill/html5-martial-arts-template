@@ -1,0 +1,64 @@
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+@import "partials/mixins";
+// To generate css equivalent to the blueprint css but with your
+// configuration applied, uncomment:
+// @include blueprint;
+
+// If you are doing a lot of stylesheet concatenation, it is suggested
+// that you scope your blueprint styles, so that you can better control
+// what pages use blueprint when stylesheets are concatenated together.
+@include blueprint-utilities;
+@include blueprint-typography(false);
+
+body {
+  // @include blueprint-typography(true);
+  // @include blueprint-utilities;
+  // @include blueprint-debug;
+  // @include blueprint-interaction;
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+}
+
+// Include the grid classes as an example of all calculated widths
+// use the column mixin to create semantic classes and ids
+@include grid;
+
+// add link icons to all links with .with-icon class
+.with-icon {
+  @include link-icons;
+}
+
+// add buttons  
+button.bp {
+  @include button-colors;
+  @include button-active-colors;
+  @include button-hover-colors;
+  @include button-base;
+  // @include anchor-button;
+  // @include button-button;
+}
+
+// Example Page layout can be done using mixins applied to your semantic classes and IDs:
+body.two-col {
+  @include container;
+
+  #header, #footer {
+    @include column($blueprint-grid-columns);
+  }
+
+  #sidebar {
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    $sidebar-columns: floor($blueprint-grid-columns / 3);
+    @include column($sidebar-columns);
+    margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
+  }
+
+  #content {
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
+    @include column($content-columns);
+    @include last;
+  }
+}

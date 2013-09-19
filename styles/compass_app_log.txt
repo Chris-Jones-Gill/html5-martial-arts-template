@@ -1,0 +1,120 @@
+2013-09-19 17:26:34     error sass/screen.scss (Line 20: Invalid CSS after "...nated together.": expected selector or at-rule, was "body.bp {")
+2013-09-19 17:26:34 overwrite stylesheets/screen.css 
+2013-09-19 17:26:55 overwrite stylesheets/screen.css 
+2013-09-19 17:32:58 overwrite stylesheets/screen.css 
+2013-09-19 17:35:39     error sass/screen.scss (Line 47 of _typography.scss: 6.25%*em/px isn't a valid CSS value.)
+2013-09-19 17:35:39 overwrite stylesheets/screen.css 
+2013-09-19 17:37:56 overwrite stylesheets/screen.css 
+2013-09-19 17:38:24 overwrite stylesheets/screen.css 
+2013-09-19 17:38:45 overwrite stylesheets/screen.css 
+2013-09-19 17:40:48 identical stylesheets/screen.css 
+2013-09-19 17:44:05 identical stylesheets/screen.css 
+2013-09-19 17:48:46 overwrite stylesheets/screen.css 
+2013-09-19 17:50:19     error sass/screen.scss (Line 26: Undefined mixin 'blueprint-link-icons'.)
+2013-09-19 17:50:19 overwrite stylesheets/screen.css 
+2013-09-19 17:51:06 overwrite stylesheets/screen.css 
+2013-09-19 17:52:27 overwrite stylesheets/screen.css 
+2013-09-19 17:57:44 overwrite stylesheets/screen.css 
+2013-09-19 18:00:35 overwrite stylesheets/screen.css 
+2013-09-19 18:01:50 overwrite stylesheets/screen.css 
+2013-09-19 18:06:25 identical stylesheets/screen.css 
+2013-09-19 18:07:49 overwrite stylesheets/screen.css 
+2013-09-19 18:09:59 overwrite stylesheets/screen.css 
+2013-09-19 18:13:04 overwrite stylesheets/screen.css 
+2013-09-19 18:16:02     error sass/screen.scss (Line 7 of sass/partials/_base.scss: An @import loop has been found: /Users/chris/Documents/Aptana Studio 3 Workspace/example-martial-arts-site/styles/sass/partials/_base.scss imports itself)
+2013-09-19 18:16:02 overwrite stylesheets/screen.css 
+2013-09-19 18:16:34     error sass/screen.scss (Line 7 of sass/partials/_base.scss: An @import loop has been found: /Users/chris/Documents/Aptana Studio 3 Workspace/example-martial-arts-site/styles/sass/partials/_base.scss imports itself)
+2013-09-19 18:16:34 overwrite stylesheets/screen.css 
+2013-09-19 18:16:38 overwrite stylesheets/screen.css 
+2013-09-19 18:20:28 overwrite stylesheets/screen.css 
+2013-09-19 18:27:11     error sass/screen.scss (Line 21: Mixin column is missing argument $n.)
+2013-09-19 18:27:11 overwrite stylesheets/screen.css 
+2013-09-19 18:32:16     error sass/screen.scss (Line 21: Mixin column is missing argument $n.)
+2013-09-19 18:32:16 identical stylesheets/screen.css 
+2013-09-19 18:32:19 overwrite stylesheets/screen.css 
+2013-09-19 18:41:50     error sass/screen.scss (Line 42 of sass/partials/_base.scss: Invalid CSS after "...ontainer-size)%": expected expression (e.g. 1px, bold), was ";")
+2013-09-19 18:41:50 overwrite stylesheets/screen.css 
+2013-09-19 18:42:25 overwrite stylesheets/screen.css 
+2013-09-19 18:45:36     error sass/screen.scss (Line 42 of sass/partials/_base.scss: Invalid CSS after "      width: width": expected ";", was ": span(#{$n});")
+2013-09-19 18:45:36 overwrite stylesheets/screen.css 
+2013-09-19 18:45:54 overwrite stylesheets/screen.css 
+2013-09-19 18:46:45 identical stylesheets/screen.css 
+2013-09-19 18:53:16 identical stylesheets/screen.css 
+2013-09-19 18:54:13 overwrite stylesheets/screen.css 
+2013-09-19 19:13:32     error sass/screen.scss (Line 45 of sass/partials/_base.scss: Undefined variable: "$blueprint-container-size-".)
+2013-09-19 19:13:32 overwrite stylesheets/screen.css 
+2013-09-19 19:13:53     error sass/screen.scss (Line 45 of sass/partials/_base.scss: Undefined variable: "$blueprint-grid-columns-1".)
+2013-09-19 19:13:53 overwrite stylesheets/screen.css 
+2013-09-19 19:14:10 overwrite stylesheets/screen.css 
+2013-09-19 19:15:32 overwrite stylesheets/screen.css 
+2013-09-19 19:16:11     error sass/screen.scss (Line 45 of sass/partials/_base.scss: Invalid CSS after "...-container-size": expected ";", was ")*100;")
+2013-09-19 19:16:11 overwrite stylesheets/screen.css 
+2013-09-19 19:16:39 overwrite stylesheets/screen.css 
+2013-09-19 19:16:59 overwrite stylesheets/screen.css 
+2013-09-19 19:17:50 overwrite stylesheets/screen.css 
+2013-09-19 19:20:08 overwrite stylesheets/screen.css 
+2013-09-19 19:22:43 overwrite stylesheets/screen.css 
+2013-09-19 19:23:50     error sass/screen.scss (Line 113 of _grid.scss: Undefined operation: "40.41667px times 1".)
+2013-09-19 19:23:50 overwrite stylesheets/screen.css 
+2013-09-19 19:25:04 overwrite stylesheets/screen.css 
+2013-09-19 19:27:33 overwrite stylesheets/screen.css 
+2013-09-19 19:27:40 identical stylesheets/screen.css 
+2013-09-19 19:29:26     error sass/screen.scss (Line 113 of _grid.scss: Undefined operation: "40.41667px times 1".)
+2013-09-19 19:29:26 overwrite stylesheets/screen.css 
+2013-09-19 19:29:56     error sass/screen.scss (Line 46 of sass/partials/_base.scss: Invalid CSS after "      width: span(": expected ")", was "{$n});")
+2013-09-19 19:29:56 overwrite stylesheets/screen.css 
+2013-09-19 19:30:28 overwrite stylesheets/screen.css 
+2013-09-19 19:31:55 overwrite stylesheets/screen.css 
+2013-09-19 19:35:22 overwrite stylesheets/screen.css 
+2013-09-19 19:37:52     error sass/screen.scss (Line 49 of sass/partials/_base.scss: 5000%*px isn't a valid CSS value.)
+2013-09-19 19:37:52 overwrite stylesheets/screen.css 
+2013-09-19 19:39:02 overwrite stylesheets/screen.css 
+2013-09-19 19:39:50 overwrite stylesheets/screen.css 
+2013-09-19 19:40:55 overwrite stylesheets/screen.css 
+2013-09-19 19:42:27     error sass/screen.scss (Line 46 of sass/partials/_base.scss: Undefined operation: "column(1)/1200px times 100%".)
+2013-09-19 19:42:27 overwrite stylesheets/screen.css 
+2013-09-19 19:42:51 overwrite stylesheets/screen.css 
+2013-09-19 19:43:46 overwrite stylesheets/screen.css 
+2013-09-19 19:45:21 overwrite stylesheets/screen.css 
+2013-09-19 19:50:52     error sass/screen.scss (Line 35 of sass/partials/_base.scss: Invalid CSS after "  }": expected selector or at-rule, was "}")
+2013-09-19 19:50:52 overwrite stylesheets/screen.css 
+2013-09-19 19:52:09     error sass/screen.scss (Line 37 of sass/partials/_base.scss: Undefined variable: "$last".)
+2013-09-19 19:52:09 overwrite stylesheets/screen.css 
+2013-09-19 19:52:31     error sass/screen.scss (Line 60: Mixin column takes 1 argument but 2 were passed.)
+2013-09-19 19:52:31 overwrite stylesheets/screen.css 
+2013-09-19 19:52:55 overwrite stylesheets/screen.css 
+2013-09-19 19:53:54 overwrite stylesheets/screen.css 
+2013-09-19 19:55:43 overwrite stylesheets/screen.css 
+2013-09-19 19:57:09 identical stylesheets/screen.css 
+2013-09-19 20:06:58     error sass/screen.scss (Line 48: Undefined variable: "$grid-columns".)
+2013-09-19 20:06:58 overwrite stylesheets/screen.css 
+2013-09-19 20:07:01     error sass/screen.scss (Line 21: Undefined mixin 'grid'.)
+2013-09-19 20:07:01 overwrite stylesheets/screen.css 
+2013-09-19 20:08:12     error sass/screen.scss (Line 22: Undefined mixin 'grid'.)
+2013-09-19 20:08:12 overwrite stylesheets/screen.css 
+2013-09-19 20:09:06     error sass/screen.scss (Line 21: Undefined mixin 'grid'.)
+2013-09-19 20:09:06 overwrite stylesheets/screen.css 
+2013-09-19 20:09:31     error sass/screen.scss (Line 21: Undefined mixin 'grid'.)
+2013-09-19 20:09:31 identical stylesheets/screen.css 
+2013-09-19 20:09:58     error sass/screen.scss (Line 41 of sass/partials/_mixins.scss: Undefined variable: "$-grid-columns".)
+2013-09-19 20:09:58 overwrite stylesheets/screen.css 
+2013-09-19 20:10:20 overwrite stylesheets/screen.css 
+2013-09-19 20:15:08     error sass/screen.scss (Line 45 of _typography.scss: Properties are only allowed within rules, directives, mixin includes, or other properties.)
+2013-09-19 20:15:08 overwrite stylesheets/screen.css 
+2013-09-19 20:15:40 overwrite stylesheets/screen.css 
+2013-09-19 20:18:28 overwrite stylesheets/screen.css 
+2013-09-19 20:19:40 identical stylesheets/screen.css 
+2013-09-19 20:20:57 overwrite stylesheets/screen.css 
+2013-09-19 20:24:57 overwrite stylesheets/screen.css 
+2013-09-19 20:30:40 overwrite stylesheets/screen.css 
+2013-09-19 20:33:33 overwrite stylesheets/screen.css 
+2013-09-19 20:35:02 overwrite stylesheets/screen.css 
+2013-09-19 20:37:56 overwrite stylesheets/screen.css 
+2013-09-19 20:37:58     error sass/screen.scss (Line 25 of sass/partials/_base.scss: Undefined variable: "$container-size".)
+2013-09-19 20:37:58 overwrite stylesheets/screen.css 
+2013-09-19 20:38:01     error sass/screen.scss (Line 25 of sass/partials/_base.scss: Undefined variable: "$container-size".)
+2013-09-19 20:38:01 identical stylesheets/screen.css 
+2013-09-19 20:38:28     error sass/screen.scss (Line 33 of sass/partials/_mixins.scss: Undefined variable: "$grid-columns".)
+2013-09-19 20:38:28 overwrite stylesheets/screen.css 
+2013-09-19 20:38:47 overwrite stylesheets/screen.css 
+2013-09-19 20:40:35 overwrite stylesheets/screen.css 
