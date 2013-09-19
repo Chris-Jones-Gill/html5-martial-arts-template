@@ -1,0 +1,43 @@
+body, html {margin:0px; padding:0px; background-color:#0E0E0E;}
+
+table{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#CDCDCD; text-decoration:none; text-align:justify; vertical-align:top;}
+
+form, p{ margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;}
+
+input, textarea{font:11px/13px Tahoma, Arial, Geneva, sans-serif;  color:#0E0E0E; text-decoration:none; margin:0px; padding:0px; font-weight:400; }
+
+td, tr {vertical-align:top; text-align:left}
+
+.gr2{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#01FF01; text-decoration:none;}
+.gr2:hover{text-decoration:underline}
+.menu a{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#888888; text-decoration:none;}
+.menu a:hover{text-decoration:underline}
+.menu{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#888888; text-decoration:none;}
+.menu:hover{text-decoration:underline}
+.text{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#CDCDCD; text-decoration:none;}
+.text:hover{text-decoration:underline}
+.monoff{ font:9px/11px Tahoma, Arial, Geneva, sans-serif; color:#FFFFFF; text-decoration:none;}
+.monoff:hover{text-decoration:underline}
+.textm{ font:10px/12px Tahoma, Arial, Geneva, sans-serif; color:#8B8B8B; text-decoration:none;}
+.textm:hover{text-decoration:underline}
+.copy{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#5C5C5C; text-decoration:none;}
+.copy:hover{text-decoration:underline}
+.gr{ font:10px/12px Tahoma, Arial, Geneva, sans-serif; color:#0FD90F; text-decoration:none;}
+.gr:hover{text-decoration:underline}
+.textl{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#CDCDCD; text-decoration:underline;}
+.textl:hover{text-decoration:none}
+.arl{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#F98C1E; text-decoration:underline;}
+.arl:hover{text-decoration:none}
+.menul{ font:11px/12px Tahoma, Arial, Geneva, sans-serif; color:#888888; text-decoration:underline;}
+.menul:hover{text-decoration:none}
+
+.m1{background-image:url('images/m1.jpg'); background-repeat:no-repeat;}
+.m1m{background-image:url('images/m1m.jpg'); background-repeat:no-repeat;}
+.m2{background-image:url('images/m2.jpg'); background-repeat:no-repeat;}
+.m2m{background-image:url('images/m2m.jpg'); background-repeat:no-repeat;}
+.m3{background-image:url('images/m3.jpg'); background-repeat:no-repeat;}
+.m3m{background-image:url('images/m3m.jpg'); background-repeat:no-repeat;}
+.m4{background-image:url('images/m4.jpg'); background-repeat:no-repeat;}
+.m4m{background-image:url('images/m4m.jpg'); background-repeat:no-repeat;}
+
+
