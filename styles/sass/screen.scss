@@ -9,7 +9,7 @@
 // that you scope your blueprint styles, so that you can better control
 // what pages use blueprint when stylesheets are concatenated together.
 @include blueprint-utilities;
-@include blueprint-typography(false);
+// @include blueprint-typography(false);
 
 body {
   // @include blueprint-typography(true);
@@ -22,7 +22,7 @@ body {
 
 // Include the grid classes as an example of all calculated widths
 // use the column mixin to create semantic classes and ids
-@include grid;
+// @include grid;
 
 // add link icons to all links with .with-icon class
 .with-icon {
@@ -30,35 +30,97 @@ body {
 }
 
 // add buttons  
-button.bp {
-  @include button-colors;
-  @include button-active-colors;
-  @include button-hover-colors;
-  @include button-base;
+//button.bp {
+//  @include button-colors;
+//  @include button-active-colors;
+//  @include button-hover-colors;
+//  @include button-base;
   // @include anchor-button;
   // @include button-button;
-}
+//}
 
 // Example Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col {
+body {
+  @include box-sizing($box-model);
   @include container;
+  color: $font-color;
+  background: $blueprint-background-color;
+}
 
-  #header, #footer {
-    @include column($blueprint-grid-columns);
+header, footer {
+  @include column($blueprint-grid-columns);
+}
+header .mainTitleBlock {
+  background: url("images/bgr_lm.jpg") repeat-x;
+  width: 22px;
+  height: 192px;
+}
+
+.women, .men, .children, .news, .welcome, .offers {
+  // One third of the grid columns, rounding down. With 24 cols, this is 8.
+  $sidebar-columns: floor($blueprint-grid-columns / 3);
+  @include column($sidebar-columns);
+  margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
+}
+
+.children, .offers {
+  @include last;
+}
+
+
+.mainTitleBlock > img.logo {
+  padding-top: 4px;
+  float: left;
+}
+
+.mainTitleBlock {
+    nav {
+    padding-top: 4px;
+    a {
+      float: left;
+      height: 192px;
+    }
+      a.logo {
+        background: url("../images/title.jpg") no-repeat;
+        background-size: contain;
+        width: 29.375%;
+      }
+      a.home {
+        background: url("../images/m1.jpg") no-repeat;
+        background-size: contain;
+        width: 18.25%;
+      }
+      a.home:hover, a.home.active {
+        background: url("../images/m1m.jpg") no-repeat;
+        background-size: contain;
+      }
+      a.about {
+        background: url("../images/m2.jpg") no-repeat;
+        background-size: contain;
+        width: 15.625%;
+      }
+      a.about:hover, a.about.active {
+        background: url("../images/m2m.jpg") no-repeat;
+        background-size: contain;
+      }
+      a.history {
+        background: url("../images/m3.jpg") no-repeat;
+        background-size: contain;
+        width: 13.625%;
+      }
+      a.history:hover, a.history.active {
+        background: url("../images/m3m.jpg") no-repeat;
+        background-size: contain;
+      }
+      a.contact {
+        background: url("../images/m4.jpg") no-repeat;
+        background-size: contain;
+        width: 16.125%;
+      }
+      a.contact:hover, a.contact.active {
+        background: url("../images/m4m.jpg") no-repeat;
+        background-size: contain;
+      }
   }
 
-  #sidebar {
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns);
-    margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
-  }
-
-  #content {
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    @include column($content-columns);
-    @include last;
-  }
 }

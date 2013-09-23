@@ -111,375 +111,6 @@ a img {
   padding-bottom: 0;
 }
 
-/* line 33, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-body {
-  line-height: 1.5;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #333333;
-  font-size: 100%;
-}
-
-/* line 51, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  color: #222222;
-}
-/* line 52, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
-  margin: 0;
-}
-
-/* line 53, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h1 {
-  font-size: 3em;
-  line-height: 1;
-  margin-bottom: 0.50em;
-}
-
-/* line 54, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em;
-}
-
-/* line 55, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h3 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1.00em;
-}
-
-/* line 56, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
-}
-
-/* line 57, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h5 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 1.50em;
-}
-
-/* line 58, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-h6 {
-  font-size: 1em;
-  font-weight: bold;
-}
-
-/* line 59, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-p {
-  margin: 0 0 1.5em;
-}
-/* line 60, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-p .left {
-  display: inline;
-  float: left;
-  margin: 1.5em 1.5em 1.5em 0;
-  padding: 0;
-}
-/* line 61, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-p .right {
-  display: inline;
-  float: right;
-  margin: 1.5em 0 1.5em 1.5em;
-  padding: 0;
-}
-
-/* line 62, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-a {
-  text-decoration: underline;
-  color: #0066cc;
-}
-/* line 18, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a:visited {
-  color: #004c99;
-}
-/* line 21, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a:focus {
-  color: #0099ff;
-}
-/* line 24, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a:hover {
-  color: #0099ff;
-}
-/* line 27, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a:active {
-  color: #bf00ff;
-}
-
-/* line 63, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-blockquote {
-  margin: 1.5em;
-  color: #666666;
-  font-style: italic;
-}
-
-/* line 64, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-strong, dfn {
-  font-weight: bold;
-}
-
-/* line 65, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-em, dfn {
-  font-style: italic;
-}
-
-/* line 66, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-sup, sub {
-  line-height: 0;
-}
-
-/* line 67, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-abbr, acronym {
-  border-bottom: 1px dotted #666666;
-}
-
-/* line 68, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-address {
-  margin: 0 0 1.5em;
-  font-style: italic;
-}
-
-/* line 69, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-del {
-  color: #666666;
-}
-
-/* line 70, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-pre {
-  margin: 1.5em 0;
-  white-space: pre;
-}
-
-/* line 71, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-pre, code, tt {
-  font: 1em "andale mono", "lucida console", monospace;
-  line-height: 1.5;
-}
-
-/* line 72, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-li ul, li ol {
-  margin: 0;
-}
-
-/* line 73, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-ul, ol {
-  margin: 0 1.5em 1.5em 0;
-  padding-left: 1.5em;
-}
-
-/* line 74, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-ul {
-  list-style-type: disc;
-}
-
-/* line 75, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-ol {
-  list-style-type: decimal;
-}
-
-/* line 76, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-dl {
-  margin: 0 0 1.5em 0;
-}
-/* line 77, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-dl dt {
-  font-weight: bold;
-}
-
-/* line 78, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-dd {
-  margin-left: 1.5em;
-}
-
-/* line 79, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-table {
-  margin-bottom: 1.4em;
-  width: 100%;
-}
-
-/* line 80, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-th {
-  font-weight: bold;
-}
-
-/* line 81, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-thead th {
-  background: #c3d9ff;
-}
-
-/* line 82, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-th, td, caption {
-  padding: 4px 10px 4px 5px;
-}
-
-/* line 85, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-table.striped tr:nth-child(even) td,
-table tr.even td {
-  background: #e5ecf9;
-}
-
-/* line 86, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-tfoot {
-  font-style: italic;
-}
-
-/* line 87, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-caption {
-  background: #eeeeee;
-}
-
-/* line 88, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-.quiet {
-  color: #666666;
-}
-
-/* line 89, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
-.loud {
-  color: #111111;
-}
-
-/* line 17, ../sass/partials/_mixins.scss */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 22, ../sass/partials/_mixins.scss */
-.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {
-  margin-right: 0.83333%;
-}
-/* line 4, ../sass/partials/_mixins.scss */
-* html .column, * html .span-1, * html .span-2, * html .span-3, * html .span-4, * html .span-5, * html .span-6, * html .span-7, * html .span-8, * html .span-9, * html .span-10, * html .span-11, * html .span-12, * html .span-13, * html .span-14, * html .span-15, * html .span-16, * html .span-17, * html .span-18, * html .span-19, * html .span-20, * html .span-21, * html .span-22, * html .span-23, * html .span-24 {
-  overflow-x: hidden;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-1 {
-  width: 3.36806%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-2 {
-  width: 7.56944%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-3 {
-  width: 11.77083%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-4 {
-  width: 15.97222%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-5 {
-  width: 20.17361%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-6 {
-  width: 24.375%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-7 {
-  width: 28.57639%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-8 {
-  width: 32.77778%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-9 {
-  width: 36.97917%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-10 {
-  width: 41.18056%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-11 {
-  width: 45.38194%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-12 {
-  width: 49.58333%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-13 {
-  width: 53.78472%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-14 {
-  width: 57.98611%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-15 {
-  width: 62.1875%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-16 {
-  width: 66.38889%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-17 {
-  width: 70.59028%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-18 {
-  width: 74.79167%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-19 {
-  width: 78.99306%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-20 {
-  width: 83.19444%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-21 {
-  width: 87.39583%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-22 {
-  width: 91.59722%;
-}
-
-/* line 28, ../sass/partials/_mixins.scss */
-.span-23 {
-  width: 95.79861%;
-}
-
-/* line 33, ../sass/partials/_mixins.scss */
-.span-24 {
-  width: 100%;
-  margin-right: 0;
-}
-
 /* line 27, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href^="http:"],
 .with-icon a[href^="mailto:"],
@@ -497,99 +128,136 @@ caption {
 }
 /* line 28, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href^="http:"] {
-  background-image: url('/images/link_icons/external.png');
+  background-image: url('../images/link_icons/external.png');
 }
 /* line 29, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href^="mailto:"] {
-  background-image: url('/images/link_icons/email.png');
+  background-image: url('../images/link_icons/email.png');
 }
 /* line 30, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href^="http:"]:visited {
-  background-image: url('/images/link_icons/visited.png');
+  background-image: url('../images/link_icons/visited.png');
 }
 /* line 31, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href$=".pdf"] {
-  background-image: url('/images/link_icons/pdf.png');
+  background-image: url('../images/link_icons/pdf.png');
 }
 /* line 32, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href$=".doc"] {
-  background-image: url('/images/link_icons/doc.png');
+  background-image: url('../images/link_icons/doc.png');
 }
 /* line 33, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href$=".xls"] {
-  background-image: url('/images/link_icons/xls.png');
+  background-image: url('../images/link_icons/xls.png');
 }
 /* line 35, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href$=".rss"],
 .with-icon a[href$=".rdf"] {
-  background-image: url('/images/link_icons/feed.png');
+  background-image: url('../images/link_icons/feed.png');
 }
 /* line 36, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_link-icons.scss */
 .with-icon a[href^="aim:"] {
-  background-image: url('/images/link_icons/im.png');
-}
-
-/* line 33, ../sass/screen.scss */
-button.bp {
-  background-color: whitesmoke;
-  border-color: #eeeeee #dedede #dedede #eeeeee;
-  color: #565656;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  margin: 0.7em 0.5em 0.7em 0;
-  border-width: 1px;
-  border-style: solid;
-  font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
-  font-size: 100%;
-  line-height: 130%;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* line 47, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-button.bp:active {
-  background-color: #6299c5;
-  border-color: #72a9d5 #6299c5 #6299c5 #72a9d5;
-  color: white;
-}
-/* line 62, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-button.bp:hover {
-  background-color: #dff4ff;
-  border-color: #d2f1ff #c2e1ef #c2e1ef #d2f1ff;
-  color: #336699;
-}
-/* line 75, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-button.bp img {
-  margin: 0 3px -3px 0 !important;
-  padding: 0;
-  border: none;
-  width: 16px;
-  height: 16px;
-  float: none;
+  background-image: url('../images/link_icons/im.png');
 }
 
 /* line 43, ../sass/screen.scss */
-body.two-col {
-  width: 1200px;
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  color: #cdcdcd;
+  background: #0e0e0e;
 }
-/* line 46, ../sass/screen.scss */
-body.two-col #header, body.two-col #footer {
+
+/* line 50, ../sass/screen.scss */
+header, footer {
   width: 100%;
 }
-/* line 50, ../sass/screen.scss */
-body.two-col #sidebar {
-  width: 32.77778%;
-  margin-right: 0.83333%;
+
+/* line 53, ../sass/screen.scss */
+header .mainTitleBlock {
+  background: url("images/bgr_lm.jpg") repeat-x;
+  width: 22px;
+  height: 192px;
 }
-/* line 57, ../sass/screen.scss */
-body.two-col #content {
-  width: 66.38889%;
+
+/* line 59, ../sass/screen.scss */
+.women, .men, .children, .news, .welcome, .offers {
+  width: 32.5%;
+  margin-right: 1.25%;
+}
+
+/* line 66, ../sass/screen.scss */
+.children, .offers {
   margin-right: 0;
+}
+
+/* line 71, ../sass/screen.scss */
+.mainTitleBlock > img.logo {
+  padding-top: 4px;
+  float: left;
+}
+
+/* line 77, ../sass/screen.scss */
+.mainTitleBlock nav {
+  padding-top: 4px;
+}
+/* line 79, ../sass/screen.scss */
+.mainTitleBlock nav a {
+  float: left;
+  height: 192px;
+}
+/* line 83, ../sass/screen.scss */
+.mainTitleBlock nav a.logo {
+  background: url("../images/title.jpg") no-repeat;
+  background-size: contain;
+  width: 29.375%;
+}
+/* line 88, ../sass/screen.scss */
+.mainTitleBlock nav a.home {
+  background: url("../images/m1.jpg") no-repeat;
+  background-size: contain;
+  width: 18.25%;
+}
+/* line 93, ../sass/screen.scss */
+.mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active {
+  background: url("../images/m1m.jpg") no-repeat;
+  background-size: contain;
+}
+/* line 97, ../sass/screen.scss */
+.mainTitleBlock nav a.about {
+  background: url("../images/m2.jpg") no-repeat;
+  background-size: contain;
+  width: 15.625%;
+}
+/* line 102, ../sass/screen.scss */
+.mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active {
+  background: url("../images/m2m.jpg") no-repeat;
+  background-size: contain;
+}
+/* line 106, ../sass/screen.scss */
+.mainTitleBlock nav a.history {
+  background: url("../images/m3.jpg") no-repeat;
+  background-size: contain;
+  width: 13.625%;
+}
+/* line 111, ../sass/screen.scss */
+.mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active {
+  background: url("../images/m3m.jpg") no-repeat;
+  background-size: contain;
+}
+/* line 115, ../sass/screen.scss */
+.mainTitleBlock nav a.contact {
+  background: url("../images/m4.jpg") no-repeat;
+  background-size: contain;
+  width: 16.125%;
+}
+/* line 120, ../sass/screen.scss */
+.mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active {
+  background: url("../images/m4m.jpg") no-repeat;
+  background-size: contain;
 }

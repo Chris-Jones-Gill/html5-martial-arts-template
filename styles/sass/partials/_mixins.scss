@@ -1,3 +1,9 @@
+// Override the default blueprint width to become max-width for responsive purposes
+@mixin container {
+  max-width: $blueprint-container-size;
+  margin: 0 auto;
+  @include clearfix; }
+
 // Override the default blueprint to use % widths
 @mixin column-base {
     margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
