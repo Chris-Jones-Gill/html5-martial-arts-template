@@ -276,7 +276,7 @@ header .mainTitleBlock {
 
 /* line 103, ../sass/screen.scss */
 .mainTitleBlock nav {
-  padding-top: 4px;
+  padding-top: 22px;
 }
 /* line 105, ../sass/screen.scss */
 .mainTitleBlock nav a {
@@ -296,7 +296,7 @@ header .mainTitleBlock {
   width: 18.25%;
 }
 /* line 119, ../sass/screen.scss */
-.mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active {
+.mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active, .mainTitleBlock nav a.home:focus {
   background: url("../images/m1m.jpg") no-repeat;
   background-size: contain;
 }
@@ -307,7 +307,7 @@ header .mainTitleBlock {
   width: 15.625%;
 }
 /* line 128, ../sass/screen.scss */
-.mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active {
+.mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active, .mainTitleBlock nav a.about:focus {
   background: url("../images/m2m.jpg") no-repeat;
   background-size: contain;
 }
@@ -318,7 +318,7 @@ header .mainTitleBlock {
   width: 13.625%;
 }
 /* line 137, ../sass/screen.scss */
-.mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active {
+.mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active, .mainTitleBlock nav a.history:focus {
   background: url("../images/m3m.jpg") no-repeat;
   background-size: contain;
 }
@@ -329,7 +329,7 @@ header .mainTitleBlock {
   width: 16.125%;
 }
 /* line 146, ../sass/screen.scss */
-.mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active {
+.mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active, .mainTitleBlock nav a.contact:focus {
   background: url("../images/m4m.jpg") no-repeat;
   background-size: contain;
 }
