@@ -41,3 +41,5 @@ dist
 # Files to ignore
 compass_app_log.txt
 
+styles/compass_app_log.txt
+styles/.sass-cache

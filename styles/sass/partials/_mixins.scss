@@ -1,3 +1,5 @@
+// Mixins taken from Blueprint and modified for this project
+
 // Override the default blueprint width to become max-width for responsive purposes
 @mixin container {
   max-width: $blueprint-container-size;
