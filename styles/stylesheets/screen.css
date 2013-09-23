@@ -1,3 +1,51 @@
+/* =====================================================================
+ * Project:       Example martial arts website
+ * Author:        Chris Jones-Gill - KISS Web Design
+ * Version:       0.0.1
+ * Created:       September 2013
+ * Copyright:     KISS Web Design - (C) 2013 - All rights reserved
+ * Description:   Main stylesheet SASS/Compass for the project
+ * Requires:      Compass (http://compass-style.org/) and SASS (http://sass-lang.com/)
+ * License:       GPL version 3 - see GPL_v3.txt for full terms and conditions
+ * 
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see http://www.gnu.org/licenses.
+ * 
+/* ===================================================================== */
+/* =====================================================================
+ * Project:       Example martial arts website
+ * Author:        Chris Jones-Gill - KISS Web Design
+ * Version:       0.0.1
+ * Created:       September 2013
+ * Copyright:     KISS Web Design - (C) 2013 - All rights reserved
+ * Description:   SASS/Compass base definitions for the project CSS
+ * Requires:      Compass (http://compass-style.org/) and SASS (http://sass-lang.com/)
+ * License:       GPL version 3 - see GPL_v3.txt for full terms and conditions
+ * 
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see http://www.gnu.org/licenses.
+ * 
+/* ===================================================================== */
 /* line 4, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
   margin: 0;
@@ -57,6 +105,30 @@ a img {
   border: none;
 }
 
+/* =====================================================================
+ * Project:       Example martial arts website
+ * Author:        Chris Jones-Gill - KISS Web Design
+ * Version:       0.0.1
+ * Created:       September 2013
+ * Copyright:     KISS Web Design - (C) 2013 - All rights reserved
+ * Description:   SASS/Compass mixins for the project CSS
+ * Requires:      Compass (http://compass-style.org/) and SASS (http://sass-lang.com/)
+ * License:       GPL version 3 - see GPL_v3.txt for full terms and conditions
+ * 
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see http://www.gnu.org/licenses.
+ * 
+/* ===================================================================== */
 /* line 9, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
 .clear {
   clear: both;
@@ -160,7 +232,7 @@ a img {
   background-image: url('../images/link_icons/im.png');
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -173,90 +245,90 @@ body {
   background: #0e0e0e;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 header, footer {
   width: 100%;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 header .mainTitleBlock {
   background: url("images/bgr_lm.jpg") repeat-x;
   width: 22px;
   height: 192px;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .women, .men, .children, .news, .welcome, .offers {
   width: 32.5%;
   margin-right: 1.25%;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .children, .offers {
   margin-right: 0;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .mainTitleBlock > img.logo {
   padding-top: 4px;
   float: left;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .mainTitleBlock nav {
   padding-top: 4px;
 }
-/* line 79, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .mainTitleBlock nav a {
   float: left;
   height: 192px;
 }
-/* line 83, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .mainTitleBlock nav a.logo {
   background: url("../images/title.jpg") no-repeat;
   background-size: contain;
   width: 29.375%;
 }
-/* line 88, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .mainTitleBlock nav a.home {
   background: url("../images/m1.jpg") no-repeat;
   background-size: contain;
   width: 18.25%;
 }
-/* line 93, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active {
   background: url("../images/m1m.jpg") no-repeat;
   background-size: contain;
 }
-/* line 97, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .mainTitleBlock nav a.about {
   background: url("../images/m2.jpg") no-repeat;
   background-size: contain;
   width: 15.625%;
 }
-/* line 102, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active {
   background: url("../images/m2m.jpg") no-repeat;
   background-size: contain;
 }
-/* line 106, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .mainTitleBlock nav a.history {
   background: url("../images/m3.jpg") no-repeat;
   background-size: contain;
   width: 13.625%;
 }
-/* line 111, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active {
   background: url("../images/m3m.jpg") no-repeat;
   background-size: contain;
 }
-/* line 115, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .mainTitleBlock nav a.contact {
   background: url("../images/m4.jpg") no-repeat;
   background-size: contain;
   width: 16.125%;
 }
-/* line 120, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active {
   background: url("../images/m4m.jpg") no-repeat;
   background-size: contain;

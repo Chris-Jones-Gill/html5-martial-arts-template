@@ -1,8 +1,32 @@
+/* =====================================================================
+ * Project:       Example martial arts website
+ * Author:        Chris Jones-Gill - KISS Web Design
+ * Version:       0.0.1
+ * Created:       September 2013
+ * Copyright:     KISS Web Design - (C) 2013 - All rights reserved
+ * Description:   SASS/Compass base definitions for the project CSS
+ * Requires:      Compass (http://compass-style.org/) and SASS (http://sass-lang.com/)
+ * License:       GPL version 3 - see GPL_v3.txt for full terms and conditions
+ * 
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see http://www.gnu.org/licenses.
+ * 
+/* ===================================================================== */
+
 // import the support classes
 @import "compass/support";
 @import "compass/css3/shared";
-@import "compass/css3/box-sizing";
-@import "compass/css3/box-shadow";
+@import "compass/css3";
 
 // Import the various blueprint modules
 
