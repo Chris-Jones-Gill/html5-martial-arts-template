@@ -65,20 +65,19 @@ body {
   // @include button-button;
 //}
 
-// Example Page layout can be done using mixins applied to your semantic classes and IDs:
 body {
   @include box-sizing($box-model);
   @include container;
   color: $font-color;
   background: $blueprint-background-color;
+  font-family: $blueprint-font-family;
 }
 
 header, footer {
   @include column($blueprint-grid-columns);
 }
-header .mainTitleBlock {
-  background: url("images/bgr_lm.jpg") repeat-x;
-  width: 22px;
+header.mainTitleBlock {
+  width: 100%;;
   height: 192px;
 }
 
@@ -99,54 +98,153 @@ header .mainTitleBlock {
   float: left;
 }
 
-.mainTitleBlock {
-    nav {
-    padding-top: 22px;
-    a {
-      float: left;
-      height: 192px;
-    }
-      a.logo {
-        background: url("../images/title.jpg") no-repeat;
-        background-size: contain;
-        width: 29.375%;
-      }
-      a.home {
-        background: url("../images/m1.jpg") no-repeat;
-        background-size: contain;
-        width: 18.25%;
-      }
-      a.home:hover, a.home.active, a.home:focus {
-        background: url("../images/m1m.jpg") no-repeat;
-        background-size: contain;
-      }
-      a.about {
-        background: url("../images/m2.jpg") no-repeat;
-        background-size: contain;
-        width: 15.625%;
-      }
-      a.about:hover, a.about.active, a.about:focus {
-        background: url("../images/m2m.jpg") no-repeat;
-        background-size: contain;
-      }
-      a.history {
-        background: url("../images/m3.jpg") no-repeat;
-        background-size: contain;
-        width: 13.625%;
-      }
-      a.history:hover, a.history.active, a.history:focus {
-        background: url("../images/m3m.jpg") no-repeat;
-        background-size: contain;
-      }
-      a.contact {
-        background: url("../images/m4.jpg") no-repeat;
-        background-size: contain;
-        width: 16.125%;
-      }
-      a.contact:hover, a.contact.active, a.contact:focus {
-        background: url("../images/m4m.jpg") no-repeat;
-        background-size: contain;
-      }
-  }
+// Everything below this point must be inside a media query
 
-}
+
+// between the min sensible width and the first breakpoint
+@media all and (max-width: $bp-1-em) {
+  .mainTitleBlock {
+      nav {
+      padding-top: 22px;
+      a {
+        float: left;
+        height: 192px;
+      }
+        a.logo {
+          background: url("../images/title.jpg") no-repeat;
+          background-size: contain;
+          max-width: 232px;
+          width: 73.4375%;
+          margin-left: -117.5px;
+          position: absolute;
+          left: 50%;
+        }
+        .small-menu {
+          margin-top: 190px;
+          text-align: center;
+          ul {
+            @include menu-text-background;
+            height: 20px;            
+          }
+          li {
+            display: inline-block;
+            width: 23%;
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: 1;
+            vertical-align: top;
+            color: $font-color;
+
+          }
+          li.active, li:hover {
+            @include menu-text-active-hover;
+          }
+          li.last {
+              margin-right: 0;
+          }
+          li a {
+            height: 20px;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+          }
+      }
+    }
+  }  
+} // end media query $bp-1-em
+
+
+// at and below the min sensible width
+@media all and (max-width: $bp-min-em) {
+  .mainTitleBlock {
+      nav {
+      padding-top: 22px;
+      a {
+        float: left;
+        height: 192px;
+      }
+        a.logo {
+          background: url("../images/title.jpg") no-repeat;
+          background-size: contain;
+          max-width: 232px;
+          width: 73.4375%;
+          margin-left: -36.7185%;
+          position: absolute;
+          left: 50%;
+        }
+        .small-menu {
+          ul {
+            li {
+              font-size: 0.9em;
+              line-height: 1.25;
+            }
+          }
+        }
+      
+      }
+    }
+  
+} // end media query $bp-min-em
+
+
+// above the first breakpoint width
+@media all and (min-width: $bp-1-em) {
+  .mainTitleBlock {
+      nav {
+      padding-top: 22px;
+      a {
+        float: left;
+        height: 192px;
+      }
+        // hide the small text menu
+        .small-menu {
+          display: none;
+          visibility: hidden;
+        }
+        a.logo {
+          background: url("../images/title.jpg") no-repeat;
+          background-size: contain;
+          width: 31.3333%;
+          margin-left: 0;
+          position: inherit;
+        }
+        a.home {
+          background: url("../images/m1.jpg") no-repeat;
+          background-size: contain;
+          width: 19.4666%;
+        }
+        a.home:hover, a.home.active, a.home:focus {
+          background: url("../images/m1m.jpg") no-repeat;
+          background-size: contain;
+        }
+        a.about {
+          background: url("../images/m2.jpg") no-repeat;
+          background-size: contain;
+          width: 16.6666%;
+        }
+        a.about:hover, a.about.active, a.about:focus {
+          background: url("../images/m2m.jpg") no-repeat;
+          background-size: contain;
+        }
+        a.history {
+          background: url("../images/m3.jpg") no-repeat;
+          background-size: contain;
+          width: 14.5333%;
+        }
+        a.history:hover, a.history.active, a.history:focus {
+          background: url("../images/m3m.jpg") no-repeat;
+          background-size: contain;
+        }
+        a.contact {
+          background: url("../images/m4.jpg") no-repeat;
+          background-size: contain;
+          width: 17.2%;
+        }
+        a.contact:hover, a.contact.active, a.contact:focus {
+          background: url("../images/m4m.jpg") no-repeat;
+          background-size: contain;
+        }
+    }  
+  }
+} // end media query

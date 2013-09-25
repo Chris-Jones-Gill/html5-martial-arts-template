@@ -28,7 +28,7 @@
 @import "compass/css3/shared";
 @import "compass/css3";
 
-// Import the various blueprint modules
+// Import the various blueprint modules (compass required)
 
 // This import applies a global reset to any page that imports this stylesheet.
 @import "blueprint/reset";
@@ -48,7 +48,7 @@
 // Here is where you can define your constants for your application and to configure the blueprint framework.
 
 $blueprint-grid-columns: 24;
-$blueprint-container-size: 800px;
+$blueprint-container-size: 750px;
 $blueprint-grid-margin: 10px;
 
 // Use this to calculate the width based on the total width.
@@ -78,3 +78,22 @@ $font-color: #CDCDCD;
 @import "blueprint/colors";
 
 $box-model: border-box; // use flex-box | border-box | content-box
+
+// Set breakpoints
+// allow for px but use em everywhere you can
+// Start with the small screen first, then expand until it looks like shit. Time for a breakpoint! -Stephen Hay
+
+// major breakpoints
+
+// use 320px as the minimum sensible size, because you have to start somewhere!
+$bp-min-px: 320px;
+$bp-min-em: ($bp-min-px / $blueprint-font-size)*1em;
+
+// first breakpoint
+$bp-1-px: 600px;
+$bp-1-em: ($bp-1-px / $blueprint-font-size)*1em;
+
+// have a breakpoint at the max-width of the container
+$bp-max-px: $blueprint-container-size;
+$bp-max-em: ($bp-max-px / $blueprint-font-size)*1em;
+
