@@ -48,7 +48,7 @@
 // Here is where you can define your constants for your application and to configure the blueprint framework.
 
 $blueprint-grid-columns: 24;
-$blueprint-container-size: 750px;
+$blueprint-container-size: 766px;
 $blueprint-grid-margin: 10px;
 
 // Use this to calculate the width based on the total width.
@@ -75,7 +75,12 @@ $blueprint-button-active-font-color: white;
 
 $blueprint-background-color: #0E0E0E;
 $font-color: #CDCDCD;
+$blueprint-border-color: #303030;
+$highlight-color: orange;
+$link-color: orange;
 @import "blueprint/colors";
+
+$date-color: #0FD90F;
 
 $box-model: border-box; // use flex-box | border-box | content-box
 

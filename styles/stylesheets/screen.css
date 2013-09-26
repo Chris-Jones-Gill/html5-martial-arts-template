@@ -233,11 +233,15 @@ a img {
 }
 
 /* line 68, ../sass/screen.scss */
-body {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 750px;
+}
+
+/* line 71, ../sass/screen.scss */
+body {
+  max-width: 766px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
@@ -246,45 +250,163 @@ body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
+a {
+  color: orange;
+}
+
+/* line 80, ../sass/screen.scss */
 header, footer {
   width: 100%;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 header.mainTitleBlock {
   width: 100%;
   height: 192px;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .women, .men, .children, .news, .welcome, .offers {
-  width: 32.44444%;
-  margin-right: 1.33333%;
+  margin-right: 1.30548%;
+  float: left;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
+.news, .welcome, .offers {
+  border-left: 1px solid #303030;
+}
+
+/* line 97, ../sass/screen.scss */
+.offers {
+  border-right: 1px solid #303030;
+}
+
+/* line 101, ../sass/screen.scss */
 .children, .offers {
   margin-right: 0;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
+section.content {
+  margin-left: 3.1331%;
+  margin-right: 3.1331%;
+}
+
+/* line 110, ../sass/screen.scss */
+section {
+  margin-top: 20px;
+}
+
+/* line 113, ../sass/screen.scss */
+section header {
+  margin-left: 7.78%;
+}
+/* line 116, ../sass/screen.scss */
+section header h1 :first-of-type {
+  color: orange;
+}
+/* line 120, ../sass/screen.scss */
+section header h1 :last-of-type {
+  color: white;
+}
+/* line 123, ../sass/screen.scss */
+section header h1 {
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* line 130, ../sass/screen.scss */
+section article {
+  margin-left: 7.78%;
+  margin-top: 10px;
+}
+/* line 134, ../sass/screen.scss */
+section article .date {
+  font-size: 0.75em;
+}
+/* line 137, ../sass/screen.scss */
+section article p {
+  font-size: 0.7em;
+  margin-bottom: 5px;
+}
+/* line 141, ../sass/screen.scss */
+section article h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 146, ../sass/screen.scss */
+article img {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 150, ../sass/screen.scss */
+img.readmore {
+  margin-right: 6px;
+  margin-top: 5px;
+}
+
+/* line 154, ../sass/screen.scss */
+.date {
+  font-family: Tahoma, Arial, Geneva, sans-serif;
+  color: #0fd90f;
+  margin-bottom: 15px;
+}
+
+/* line 160, ../sass/screen.scss */
 .mainTitleBlock > img.logo {
   padding-top: 4px;
   float: left;
 }
 
+/* line 165, ../sass/screen.scss */
+table.offerList {
+  font-size: 0.7em;
+  margin-top: 10px;
+  padding-bottom: 18px;
+  width: 88.412%;
+}
+/* line 171, ../sass/screen.scss */
+table.offerList a {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+/* line 175, ../sass/screen.scss */
+table.offerList a:hover {
+  text-decoration: underline;
+}
+/* line 178, ../sass/screen.scss */
+table.offerList tr {
+  height: 20px;
+}
+/* line 180, ../sass/screen.scss */
+table.offerList tr td:first-of-type {
+  width: 9.0129%;
+}
+/* line 183, ../sass/screen.scss */
+table.offerList tr td:last-of-type {
+  border-right: 3px #4a4a4a double;
+  width: 77.9824%;
+}
+/* line 188, ../sass/screen.scss */
+table.offerList tr.verticalSpacer {
+  height: 2px;
+}
+
 @media all and (max-width: 37.5em) {
-  /* line 107, ../sass/screen.scss */
+  /* line 200, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
   }
-  /* line 109, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 113, ../sass/screen.scss */
+  /* line 206, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
@@ -294,12 +416,12 @@ header.mainTitleBlock {
     position: absolute;
     left: 50%;
   }
-  /* line 122, ../sass/screen.scss */
+  /* line 215, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu {
     margin-top: 190px;
     text-align: center;
   }
-  /* line 125, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu ul {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -319,7 +441,7 @@ header.mainTitleBlock {
     /* IE6-8 */
     height: 20px;
   }
-  /* line 129, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li {
     display: inline-block;
     width: 23%;
@@ -329,7 +451,7 @@ header.mainTitleBlock {
     vertical-align: top;
     color: #cdcdcd;
   }
-  /* line 139, ../sass/screen.scss */
+  /* line 232, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li.active, .mainTitleBlock nav .small-menu li:hover {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDglIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgIDxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iNzglIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -351,11 +473,11 @@ header.mainTitleBlock {
     text-shadow: 0 0 1px white;
     transition: all 0.3s ease-in-out 0s;
   }
-  /* line 142, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li.last {
     margin-right: 0;
   }
-  /* line 145, ../sass/screen.scss */
+  /* line 238, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li a {
     height: 20px;
     width: 100%;
@@ -363,18 +485,28 @@ header.mainTitleBlock {
     text-decoration: none;
     color: inherit;
   }
+
+  /* line 248, ../sass/screen.scss */
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 100%;
+  }
+
+  /* line 251, ../sass/screen.scss */
+  .news {
+    margin-top: 30px;
+  }
 }
 @media all and (max-width: 20em) {
-  /* line 161, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
   }
-  /* line 163, ../sass/screen.scss */
+  /* line 262, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 167, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
@@ -384,77 +516,98 @@ header.mainTitleBlock {
     position: absolute;
     left: 50%;
   }
-  /* line 178, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu ul li {
     font-size: 0.9em;
     line-height: 1.25;
   }
+
+  /* line 286, ../sass/screen.scss */
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 100%;
+  }
+
+  /* line 289, ../sass/screen.scss */
+  .news {
+    margin-top: 30px;
+  }
 }
 @media all and (min-width: 37.5em) {
-  /* line 194, ../sass/screen.scss */
+  /* line 299, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
   }
-  /* line 196, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 201, ../sass/screen.scss */
+  /* line 306, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu {
     display: none;
     visibility: hidden;
   }
-  /* line 205, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
-    width: 31.3333%;
+    width: 30.6788%;
     margin-left: 0;
     position: inherit;
   }
-  /* line 212, ../sass/screen.scss */
+  /* line 317, ../sass/screen.scss */
   .mainTitleBlock nav a.home {
     background: url("../images/m1.jpg") no-repeat;
     background-size: contain;
-    width: 19.4666%;
+    width: 19.0600%;
   }
-  /* line 217, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   .mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active, .mainTitleBlock nav a.home:focus {
     background: url("../images/m1m.jpg") no-repeat;
     background-size: contain;
   }
-  /* line 221, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   .mainTitleBlock nav a.about {
     background: url("../images/m2.jpg") no-repeat;
     background-size: contain;
-    width: 16.6666%;
+    width: 16.3185%;
   }
-  /* line 226, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   .mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active, .mainTitleBlock nav a.about:focus {
     background: url("../images/m2m.jpg") no-repeat;
     background-size: contain;
   }
-  /* line 230, ../sass/screen.scss */
+  /* line 335, ../sass/screen.scss */
   .mainTitleBlock nav a.history {
     background: url("../images/m3.jpg") no-repeat;
     background-size: contain;
-    width: 14.5333%;
+    width: 14.2297%;
   }
-  /* line 235, ../sass/screen.scss */
+  /* line 340, ../sass/screen.scss */
   .mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active, .mainTitleBlock nav a.history:focus {
     background: url("../images/m3m.jpg") no-repeat;
     background-size: contain;
   }
-  /* line 239, ../sass/screen.scss */
+  /* line 344, ../sass/screen.scss */
   .mainTitleBlock nav a.contact {
     background: url("../images/m4.jpg") no-repeat;
     background-size: contain;
-    width: 17.2%;
+    width: 19.7128%;
   }
-  /* line 244, ../sass/screen.scss */
+  /* line 349, ../sass/screen.scss */
   .mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active, .mainTitleBlock nav a.contact:focus {
     background: url("../images/m4m.jpg") no-repeat;
     background-size: contain;
+  }
+  /* line 353, ../sass/screen.scss */
+  .mainTitleBlock nav span.navSpacer {
+    background: url("../images/bgr_lm.jpg") no-repeat;
+    background-size: contain;
+  }
+
+  /* line 359, ../sass/screen.scss */
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 32.46301%;
+    min-height: 200px;
   }
 }

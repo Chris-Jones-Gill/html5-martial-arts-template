@@ -65,14 +65,18 @@ body {
   // @include button-button;
 //}
 
-body {
+* {
   @include box-sizing($box-model);
+}
+body {
   @include container;
   color: $font-color;
   background: $blueprint-background-color;
   font-family: $blueprint-font-family;
 }
-
+a {
+  color: $link-color;
+}
 header, footer {
   @include column($blueprint-grid-columns);
 }
@@ -82,20 +86,109 @@ header.mainTitleBlock {
 }
 
 .women, .men, .children, .news, .welcome, .offers {
-  // One third of the grid columns, rounding down. With 24 cols, this is 8.
-  $sidebar-columns: floor($blueprint-grid-columns / 3);
-  @include column($sidebar-columns);
   margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
+  float: left;
+}
+
+.news, .welcome, .offers {
+  border-left: 1px solid $blueprint-border-color;
+}
+
+.offers {
+  border-right: 1px solid $blueprint-border-color;
 }
 
 .children, .offers {
   @include last;
 }
 
+section.content {
+  margin-left: 3.1331%;
+  margin-right: 3.1331%;
+}
+
+section {
+  margin-top: 20px;
+}
+section header {
+  margin-left: 7.78%;
+  // make the first element under h1 color $highlight-color (see _base.scss)
+  h1 :first-of-type {
+    color: $highlight-color;
+  }
+  // make the last element under h1 color white
+  h1 :last-of-type {
+    color: white;
+  }
+  h1 {
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+  }
+}
+
+section article {
+  margin-left: 7.78%;
+  margin-top: 10px;
+  // border-bottom: dotted 1px $blueprint-border-color;
+  .date {
+    font-size: 0.75em;
+  }
+  p {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+  }
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+article img {
+  float: left;
+  margin-right: 15px;
+}
+img.readmore {
+  margin-right: 6px;
+  margin-top: 5px;
+}
+.date {
+  font-family: Tahoma, Arial, Geneva, sans-serif;
+  color: $date-color;
+  margin-bottom: 15px;
+}
 
 .mainTitleBlock > img.logo {
   padding-top: 4px;
   float: left;
+}
+
+table.offerList {
+  font-size: 0.7em;
+  margin-top: 10px;
+  padding-bottom: 18px;
+  // border-bottom: dotted 1px $blueprint-border-color;
+  width: 88.412%;
+  a {
+    color: $font-color;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  tr {
+    height: 20px;
+    td:first-of-type {
+      width: 9.0129%;
+    }
+    td:last-of-type {
+      border-right: 3px lighten($blueprint-border-color, 10%) double;
+      width: 77.9824%;
+    }
+  }
+  tr.verticalSpacer {
+    height: 2px;
+  }
+  
 }
 
 // Everything below this point must be inside a media query
@@ -152,6 +245,12 @@ header.mainTitleBlock {
       }
     }
   }  
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 100%;
+  }
+  .news {
+    margin-top: 30px;
+  }
 } // end media query $bp-1-em
 
 
@@ -184,7 +283,13 @@ header.mainTitleBlock {
       
       }
     }
-  
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 100%;
+  }
+  .news {
+    margin-top: 30px;
+  }
+ 
 } // end media query $bp-min-em
 
 
@@ -205,14 +310,14 @@ header.mainTitleBlock {
         a.logo {
           background: url("../images/title.jpg") no-repeat;
           background-size: contain;
-          width: 31.3333%;
+          width: 30.6788%;
           margin-left: 0;
           position: inherit;
         }
         a.home {
           background: url("../images/m1.jpg") no-repeat;
           background-size: contain;
-          width: 19.4666%;
+          width: 19.0600%;
         }
         a.home:hover, a.home.active, a.home:focus {
           background: url("../images/m1m.jpg") no-repeat;
@@ -221,7 +326,7 @@ header.mainTitleBlock {
         a.about {
           background: url("../images/m2.jpg") no-repeat;
           background-size: contain;
-          width: 16.6666%;
+          width: 16.3185%;
         }
         a.about:hover, a.about.active, a.about:focus {
           background: url("../images/m2m.jpg") no-repeat;
@@ -230,7 +335,7 @@ header.mainTitleBlock {
         a.history {
           background: url("../images/m3.jpg") no-repeat;
           background-size: contain;
-          width: 14.5333%;
+          width: 14.2297%;
         }
         a.history:hover, a.history.active, a.history:focus {
           background: url("../images/m3m.jpg") no-repeat;
@@ -239,12 +344,22 @@ header.mainTitleBlock {
         a.contact {
           background: url("../images/m4.jpg") no-repeat;
           background-size: contain;
-          width: 17.2%;
+          width: 19.7128%;
         }
         a.contact:hover, a.contact.active, a.contact:focus {
           background: url("../images/m4m.jpg") no-repeat;
           background-size: contain;
         }
+        span.navSpacer {
+          background: url("../images/bgr_lm.jpg") no-repeat;
+          background-size: contain;
+        }
     }  
+  }
+  .women, .men, .children, .news, .welcome, .offers {
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    $sidebar-columns: floor($blueprint-grid-columns / 3);
+    @include column($sidebar-columns);
+    min-height: 200px;
   }
 } // end media query
