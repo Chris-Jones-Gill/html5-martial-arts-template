@@ -29,7 +29,9 @@
 @mixin container {
   max-width: $blueprint-container-size;
   margin: 0 auto;
-  @include clearfix; }
+  @include clearfix; 
+  overflow: auto;
+}
 
 // Override the default blueprint to use % widths
 @mixin column-base {

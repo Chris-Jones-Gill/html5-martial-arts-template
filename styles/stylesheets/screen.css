@@ -245,6 +245,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  overflow: auto;
   color: #cdcdcd;
   background: #0e0e0e;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -288,7 +289,7 @@ header.mainTitleBlock {
 }
 
 /* line 105, ../sass/screen.scss */
-section.content {
+section.content, footer.content {
   margin-left: 3.1331%;
   margin-right: 3.1331%;
 }
@@ -395,18 +396,177 @@ table.offerList tr td:last-of-type {
 table.offerList tr.verticalSpacer {
   height: 2px;
 }
+/* line 191, ../sass/screen.scss */
+table.offerList td.linkIndicator {
+  background: #363636;
+  text-align: right;
+  vertical-align: bottom;
+  padding-right: 2px;
+  padding-bottom: 2px;
+}
 
-@media all and (max-width: 37.5em) {
-  /* line 200, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
+footer {
+  border-top: 3px double #303030;
+  margin-top: 20px;
+  display: inline-block;
+}
+/* line 205, ../sass/screen.scss */
+footer .bottom-menu {
+  margin-right: 7.78%;
+}
+/* line 207, ../sass/screen.scss */
+footer .bottom-menu li {
+  float: left;
+  width: 16.6666%;
+  text-align: center;
+  list-style: none outside none;
+}
+/* line 213, ../sass/screen.scss */
+footer .bottom-menu li:last-of-type {
+  border-right: none;
+}
+/* line 216, ../sass/screen.scss */
+footer .bottom-menu li a {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #888888;
+}
+/* line 222, ../sass/screen.scss */
+footer .bottom-menu li:hover a, footer .bottom-menu li.active a, footer .bottom-menu li:focus a {
+  text-decoration: underline;
+}
+/* line 226, ../sass/screen.scss */
+footer .copyright {
+  float: right;
+  font-size: 0.6875em;
+  text-align: center;
+  padding-top: 15px;
+  background: #212121;
+  padding-bottom: 15px;
+  color: #5c5c5c;
+}
+/* line 235, ../sass/screen.scss */
+footer .copyright:hover {
+  text-decoration: underline;
+}
+
+/* line 240, ../sass/screen.scss */
+img.groups {
+  width: 100%;
+  max-width: 234px;
+}
+
+@media all and (min-width: 37.5em) {
+  /* line 249, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
   }
-  /* line 202, ../sass/screen.scss */
+  /* line 251, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 206, ../sass/screen.scss */
+  /* line 256, ../sass/screen.scss */
+  .mainTitleBlock nav .small-menu {
+    display: none;
+    visibility: hidden;
+  }
+  /* line 260, ../sass/screen.scss */
+  .mainTitleBlock nav a.logo {
+    background: url("../images/title.jpg") no-repeat;
+    background-size: contain;
+    width: 30.6788%;
+    margin-left: 0;
+    position: inherit;
+  }
+  /* line 267, ../sass/screen.scss */
+  .mainTitleBlock nav a.home {
+    background: url("../images/m1.jpg") no-repeat;
+    background-size: contain;
+    width: 19.0600%;
+  }
+  /* line 272, ../sass/screen.scss */
+  .mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active, .mainTitleBlock nav a.home:focus {
+    background: url("../images/m1m.jpg") no-repeat;
+    background-size: contain;
+  }
+  /* line 276, ../sass/screen.scss */
+  .mainTitleBlock nav a.about {
+    background: url("../images/m2.jpg") no-repeat;
+    background-size: contain;
+    width: 16.3185%;
+  }
+  /* line 281, ../sass/screen.scss */
+  .mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active, .mainTitleBlock nav a.about:focus {
+    background: url("../images/m2m.jpg") no-repeat;
+    background-size: contain;
+  }
+  /* line 285, ../sass/screen.scss */
+  .mainTitleBlock nav a.history {
+    background: url("../images/m3.jpg") no-repeat;
+    background-size: contain;
+    width: 14.2297%;
+  }
+  /* line 290, ../sass/screen.scss */
+  .mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active, .mainTitleBlock nav a.history:focus {
+    background: url("../images/m3m.jpg") no-repeat;
+    background-size: contain;
+  }
+  /* line 294, ../sass/screen.scss */
+  .mainTitleBlock nav a.contact {
+    background: url("../images/m4.jpg") no-repeat;
+    background-size: contain;
+    width: 19.7128%;
+  }
+  /* line 299, ../sass/screen.scss */
+  .mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active, .mainTitleBlock nav a.contact:focus {
+    background: url("../images/m4m.jpg") no-repeat;
+    background-size: contain;
+  }
+  /* line 303, ../sass/screen.scss */
+  .mainTitleBlock nav span.navSpacer {
+    background: url("../images/bgr_lm.jpg") no-repeat;
+    background-size: contain;
+  }
+
+  /* line 309, ../sass/screen.scss */
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 32.46301%;
+    min-height: 200px;
+  }
+
+  /* line 315, ../sass/screen.scss */
+  footer nav.bottom-menu {
+    width: 66.23151%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  /* line 321, ../sass/screen.scss */
+  footer nav.bottom-menu li {
+    border-right: 1px solid #888888;
+  }
+
+  /* line 325, ../sass/screen.scss */
+  footer .copyright {
+    width: 32.46301%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+@media all and (max-width: 37.5em) {
+  /* line 336, ../sass/screen.scss */
+  .mainTitleBlock nav {
+    padding-top: 22px;
+  }
+  /* line 338, ../sass/screen.scss */
+  .mainTitleBlock nav a {
+    float: left;
+    height: 192px;
+  }
+  /* line 342, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
@@ -416,12 +576,12 @@ table.offerList tr.verticalSpacer {
     position: absolute;
     left: 50%;
   }
-  /* line 215, ../sass/screen.scss */
+  /* line 351, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu {
     margin-top: 190px;
     text-align: center;
   }
-  /* line 218, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu ul {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -441,7 +601,7 @@ table.offerList tr.verticalSpacer {
     /* IE6-8 */
     height: 20px;
   }
-  /* line 222, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li {
     display: inline-block;
     width: 23%;
@@ -451,7 +611,7 @@ table.offerList tr.verticalSpacer {
     vertical-align: top;
     color: #cdcdcd;
   }
-  /* line 232, ../sass/screen.scss */
+  /* line 368, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li.active, .mainTitleBlock nav .small-menu li:hover {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDglIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgIDxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iNzglIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -473,11 +633,11 @@ table.offerList tr.verticalSpacer {
     text-shadow: 0 0 1px white;
     transition: all 0.3s ease-in-out 0s;
   }
-  /* line 235, ../sass/screen.scss */
+  /* line 371, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li.last {
     margin-right: 0;
   }
-  /* line 238, ../sass/screen.scss */
+  /* line 374, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li a {
     height: 20px;
     width: 100%;
@@ -486,27 +646,45 @@ table.offerList tr.verticalSpacer {
     color: inherit;
   }
 
-  /* line 248, ../sass/screen.scss */
+  /* line 384, ../sass/screen.scss */
   .women, .men, .children, .news, .welcome, .offers {
     width: 100%;
   }
 
-  /* line 251, ../sass/screen.scss */
+  /* line 387, ../sass/screen.scss */
   .news {
     margin-top: 30px;
   }
+
+  /* line 390, ../sass/screen.scss */
+  footer nav.bottom-menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 394, ../sass/screen.scss */
+  footer nav.bottom-menu li {
+    width: 100%;
+    border-right: none;
+  }
+
+  /* line 399, ../sass/screen.scss */
+  footer .copyright {
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
 @media all and (max-width: 20em) {
-  /* line 260, ../sass/screen.scss */
+  /* line 410, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
   }
-  /* line 262, ../sass/screen.scss */
+  /* line 412, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 266, ../sass/screen.scss */
+  /* line 416, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
@@ -516,98 +694,36 @@ table.offerList tr.verticalSpacer {
     position: absolute;
     left: 50%;
   }
-  /* line 277, ../sass/screen.scss */
+  /* line 427, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu ul li {
     font-size: 0.9em;
     line-height: 1.25;
   }
 
-  /* line 286, ../sass/screen.scss */
+  /* line 436, ../sass/screen.scss */
   .women, .men, .children, .news, .welcome, .offers {
     width: 100%;
   }
 
-  /* line 289, ../sass/screen.scss */
+  /* line 439, ../sass/screen.scss */
   .news {
     margin-top: 30px;
   }
-}
-@media all and (min-width: 37.5em) {
-  /* line 299, ../sass/screen.scss */
-  .mainTitleBlock nav {
-    padding-top: 22px;
+
+  /* line 442, ../sass/screen.scss */
+  footer nav.bottom-menu {
+    margin-left: auto;
+    margin-right: auto;
   }
-  /* line 301, ../sass/screen.scss */
-  .mainTitleBlock nav a {
-    float: left;
-    height: 192px;
-  }
-  /* line 306, ../sass/screen.scss */
-  .mainTitleBlock nav .small-menu {
-    display: none;
-    visibility: hidden;
-  }
-  /* line 310, ../sass/screen.scss */
-  .mainTitleBlock nav a.logo {
-    background: url("../images/title.jpg") no-repeat;
-    background-size: contain;
-    width: 30.6788%;
-    margin-left: 0;
-    position: inherit;
-  }
-  /* line 317, ../sass/screen.scss */
-  .mainTitleBlock nav a.home {
-    background: url("../images/m1.jpg") no-repeat;
-    background-size: contain;
-    width: 19.0600%;
-  }
-  /* line 322, ../sass/screen.scss */
-  .mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active, .mainTitleBlock nav a.home:focus {
-    background: url("../images/m1m.jpg") no-repeat;
-    background-size: contain;
-  }
-  /* line 326, ../sass/screen.scss */
-  .mainTitleBlock nav a.about {
-    background: url("../images/m2.jpg") no-repeat;
-    background-size: contain;
-    width: 16.3185%;
-  }
-  /* line 331, ../sass/screen.scss */
-  .mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active, .mainTitleBlock nav a.about:focus {
-    background: url("../images/m2m.jpg") no-repeat;
-    background-size: contain;
-  }
-  /* line 335, ../sass/screen.scss */
-  .mainTitleBlock nav a.history {
-    background: url("../images/m3.jpg") no-repeat;
-    background-size: contain;
-    width: 14.2297%;
-  }
-  /* line 340, ../sass/screen.scss */
-  .mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active, .mainTitleBlock nav a.history:focus {
-    background: url("../images/m3m.jpg") no-repeat;
-    background-size: contain;
-  }
-  /* line 344, ../sass/screen.scss */
-  .mainTitleBlock nav a.contact {
-    background: url("../images/m4.jpg") no-repeat;
-    background-size: contain;
-    width: 19.7128%;
-  }
-  /* line 349, ../sass/screen.scss */
-  .mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active, .mainTitleBlock nav a.contact:focus {
-    background: url("../images/m4m.jpg") no-repeat;
-    background-size: contain;
-  }
-  /* line 353, ../sass/screen.scss */
-  .mainTitleBlock nav span.navSpacer {
-    background: url("../images/bgr_lm.jpg") no-repeat;
-    background-size: contain;
+  /* line 446, ../sass/screen.scss */
+  footer nav.bottom-menu li {
+    width: 100%;
   }
 
-  /* line 359, ../sass/screen.scss */
-  .women, .men, .children, .news, .welcome, .offers {
-    width: 32.46301%;
-    min-height: 200px;
+  /* line 450, ../sass/screen.scss */
+  footer .copyright {
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
 }

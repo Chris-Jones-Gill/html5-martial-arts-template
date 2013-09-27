@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 /* =====================================================================
  * Project:       Example martial arts website
@@ -73,7 +74,7 @@
 				</div>
 			</nav>
 		</header>
-		<section class="content">
+		<section class="content" role="main">
 			<section class="news">
 				<header>
 					<h1><span>latest</span><span> news</span></h1>
@@ -83,7 +84,7 @@
 						<strong>10-10-2013</strong>
 					</div>
 					<p class="introText">
-						Iipsum dolor sit amet, cotetur sadipsc ing elitr, sed diam nonumy eirmod tempor invidunt ut. <a href="#">more</a>
+						Iipsum dolor sit amet, cotetur sadipsc ing elitr, sed diam nonumy eirmod tempor invidunt ut. <a href="#" tabindex="10">more</a>
 					</p>
 				</article>
 				<article>
@@ -91,7 +92,7 @@
 						<strong>10-10-2013</strong>
 					</div>
 					<p class="introText">
-						Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. <a href="#">more</a>
+						Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. <a href="#" tabindex="11">more</a>
 					</p>
 				</article>
 			</section>
@@ -106,8 +107,7 @@
 						<h2>Amet consetetur</h2>
 						<p>
 							sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.<br /><br />
-							<img class="readmore" src="images/strel.jpg" width="8" height="5" ><a href="#">read more</a>
-						</p>
+							<img class="readmore" src="images/strel.jpg" width="8" height="5" ><a href="#" tabindex="12">read more</a>
 					</p>
 				</article>
 			</section>
@@ -118,42 +118,88 @@
 				<table class="offerList" height="130" border="0" cellpadding="0" cellspacing="0" style="margin-left:16px">
 					<tbody>
 						<tr>
-							<td bgcolor="#363636"><img src="images/strel2.jpg" width="3" height="3" style="margin:15px 0 0 15px"></td>
-							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text">lorem ipsum dolor sit consetetur </a></p></td>
+							<td class="linkIndicator" role="presentation"><img src="images/strel2.jpg" width="3" height="3"></td>
+							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text" tabindex="13" title="Offer 1">lorem ipsum dolor sit consetetur </a></p></td>
 						</tr>
-						<tr class="verticalSpacer"></tr>
+						<tr class="verticalSpacer" role="presentation"></tr>
 						<tr>
-							<td bgcolor="#363636"><img src="images/strel2.jpg" width="3" height="3" style="margin:15px 0 0 15px"></td>
-							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text">consetetur sadipscing elitr sed </a></p></td>
+							<td class="linkIndicator" role="presentation"><img src="images/strel2.jpg" width="3" height="3"></td>
+							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text" tabindex="14" title="Offer 2">consetetur sadipscing elitr sed </a></p></td>
 						</tr>
-						<tr class="verticalSpacer"></tr>
+						<tr class="verticalSpacer" role="presentation"></tr>
 						<tr>
-							<td bgcolor="#363636"><img src="images/strel2.jpg" width="3" height="3" style="margin:15px 0 0 15px"></td>
-							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text">sadipscing elitr sed diam nonumy </a></p></td>
+							<td class="linkIndicator" role="presentation"><img src="images/strel2.jpg" width="3" height="3"></td>
+							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text" tabindex="15" title="Offer 3">sadipscing elitr sed diam nonumy </a></p></td>
 						</tr>
-						<tr class="verticalSpacer"></tr>
+						<tr class="verticalSpacer" role="presentation"></tr>
 						<tr>
-							<td bgcolor="#363636"><img src="images/strel2.jpg" width="3" height="3" style="margin:15px 0 0 15px"></td>
-							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text">diam nonumy eirmod te invidunt </a></p></td>
+							<td class="linkIndicator" role="presentation"><img src="images/strel2.jpg" width="3" height="3"></td>
+							<td bgcolor="#272727" role="presentation"><p style="margin:3px 0 0 8px"><a href="#" class="text" tabindex="16" title="Offer 4">diam nonumy eirmod te invidunt </a></p></td>
 						</tr>
-						<tr class="verticalSpacer"></tr>
+						<tr class="verticalSpacer" role="presentation"></tr>
 						<tr>
-							<td bgcolor="#363636"><img src="images/strel2.jpg" width="3" height="3" style="margin:15px 0 0 15px"></td>
-							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text">eirmod te inut labore et dolore </a></p></td>
+							<td class="linkIndicator" role="presentation"><img src="images/strel2.jpg" width="3" height="3"></td>
+							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text" tabindex="17" title="Offer 5">eirmod te inut labore et dolore </a></p></td>
 						</tr>
-						<tr class="verticalSpacer"></tr>
+						<tr class="verticalSpacer" role="presentation"></tr>
 						<tr>
-							<td bgcolor="#363636"><img src="images/strel2.jpg" width="3" height="3" style="margin:15px 0 0 15px"></td>
-							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text">labore et dolore magna aliquam </a></p></td>
+							<td class="linkIndicator" role="presentation"><img src="images/strel2.jpg" width="3" height="3"></td>
+							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text" tabindex="18" title="Offer 6">labore et dolore magna aliquam </a></p></td>
 						</tr>
-						<tr class="verticalSpacer"></tr>
+						<tr class="verticalSpacer" role="presentation"></tr>
 						<tr>
-							<td bgcolor="#363636"><img src="images/strel2.jpg" width="3" height="3" style="margin:15px 0 0 15px"></td>
-							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text">lLorem ipsum dolor sit amet </a></p></td>
+							<td class="linkIndicator" role="presentation"><img src="images/strel2.jpg" width="3" height="3"></td>
+							<td bgcolor="#272727"><p style="margin:3px 0 0 8px"><a href="#" class="text" tabindex="19" title="Offer 7">lLorem ipsum dolor sit amet </a></p></td>
 						</tr>
 					</tbody>
 				</table>
 			</section>
+			<section class="women">
+				<a href="#" title="Womens classes" tabindex="20">
+					<img class="groups" src="images/bun1.jpg" alt="womens self defence classes">
+				</a>
+			</section>
+			<section class="men">
+				<a href="#" title="Mens classes" tabindex="21">
+					<img class="groups" src="images/bun2.jpg" alt="mens professional development classes">
+				</a>
+			</section>
+			<section class="children">
+				<a href="#" title="Childrens classes" tabindex="22">
+					<img class="groups" src="images/bun3.jpg" alt="childrens preparaation classes">
+				</a>
+			</section>
 		</section>
+		<footer role="contentinfo">
+			<div class="content">
+				<nav class="bottom-menu" role="navigation">
+					<ul>
+						<li class="active">
+							<a class="home-text" href="#" tabindex="23">
+								home page
+								</a>
+							</li>
+						<li>
+							<a class="about-text" href="#" tabindex="24">
+								about us
+							</a>
+						</li>
+						<li>
+							<a class="history-text" href="#" tabindex="25">
+								our history
+							</a>
+						</li>
+						<li class="last">
+							<a class="contact-text last" href="#" tabindex="26">
+								contact us
+							</a>
+						</li>						
+					</ul>
+				</nav>
+				</div>
+				<div class="copyright">
+					<strong>Copyright © 2013.</strong> All rights reserved.
+				</div>			
+		</footer>
 	</body>
 </html>

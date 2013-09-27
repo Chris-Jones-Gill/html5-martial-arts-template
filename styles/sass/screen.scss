@@ -102,7 +102,7 @@ header.mainTitleBlock {
   @include last;
 }
 
-section.content {
+section.content, footer.content {
   margin-left: 3.1331%;
   margin-right: 3.1331%;
 }
@@ -188,110 +188,60 @@ table.offerList {
   tr.verticalSpacer {
     height: 2px;
   }
+  td.linkIndicator {
+    background: #363636;
+    text-align: right;
+    vertical-align: bottom;
+    padding-right: 2px;
+    padding-bottom: 2px;
+  }
   
 }
 
+footer {
+  border-top: 3px double $blueprint-border-color;
+  margin-top: 20px;
+  display: inline-block;
+  .bottom-menu {
+    margin-right: 7.78%;
+    li {
+      float: left;
+      width: 16.6666%;
+      text-align: center;
+      list-style: none outside none; 
+    }
+    li:last-of-type {
+      border-right: none;
+    }
+    li a {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      text-decoration: none;
+      color: $bottom-menu-color;
+    }
+    li:hover a, li.active a, li:focus a {
+      text-decoration: underline;
+    }
+  }
+  .copyright {
+    float: right;
+    font-size: 0.6875em;
+    text-align: center;
+    padding-top: 15px;
+    background: $copyright-background;
+    padding-bottom: 15px;
+    color: $copyright-color;
+  }
+  .copyright:hover {
+    text-decoration: underline;
+  }
+}
+
+img.groups {
+  width: 100%;
+  max-width: 234px;
+}
 // Everything below this point must be inside a media query
-
-
-// between the min sensible width and the first breakpoint
-@media all and (max-width: $bp-1-em) {
-  .mainTitleBlock {
-      nav {
-      padding-top: 22px;
-      a {
-        float: left;
-        height: 192px;
-      }
-        a.logo {
-          background: url("../images/title.jpg") no-repeat;
-          background-size: contain;
-          max-width: 232px;
-          width: 73.4375%;
-          margin-left: -117.5px;
-          position: absolute;
-          left: 50%;
-        }
-        .small-menu {
-          margin-top: 190px;
-          text-align: center;
-          ul {
-            @include menu-text-background;
-            height: 20px;            
-          }
-          li {
-            display: inline-block;
-            width: 23%;
-            font-size: 1.1em;
-            font-weight: bold;
-            line-height: 1;
-            vertical-align: top;
-            color: $font-color;
-
-          }
-          li.active, li:hover {
-            @include menu-text-active-hover;
-          }
-          li.last {
-              margin-right: 0;
-          }
-          li a {
-            height: 20px;
-            width: 100%;
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
-          }
-      }
-    }
-  }  
-  .women, .men, .children, .news, .welcome, .offers {
-    width: 100%;
-  }
-  .news {
-    margin-top: 30px;
-  }
-} // end media query $bp-1-em
-
-
-// at and below the min sensible width
-@media all and (max-width: $bp-min-em) {
-  .mainTitleBlock {
-      nav {
-      padding-top: 22px;
-      a {
-        float: left;
-        height: 192px;
-      }
-        a.logo {
-          background: url("../images/title.jpg") no-repeat;
-          background-size: contain;
-          max-width: 232px;
-          width: 73.4375%;
-          margin-left: -36.7185%;
-          position: absolute;
-          left: 50%;
-        }
-        .small-menu {
-          ul {
-            li {
-              font-size: 0.9em;
-              line-height: 1.25;
-            }
-          }
-        }
-      
-      }
-    }
-  .women, .men, .children, .news, .welcome, .offers {
-    width: 100%;
-  }
-  .news {
-    margin-top: 30px;
-  }
- 
-} // end media query $bp-min-em
-
 
 // above the first breakpoint width
 @media all and (min-width: $bp-1-em) {
@@ -362,4 +312,146 @@ table.offerList {
     @include column($sidebar-columns);
     min-height: 200px;
   }
-} // end media query
+  footer nav.bottom-menu {
+    $bottom-menu-columns: 2*(floor($blueprint-grid-columns / 3));
+    @include column($bottom-menu-columns);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    li {
+      border-right: 1px solid $bottom-menu-color
+    }
+  }
+  footer .copyright {
+    $bottom-menu-columns: floor($blueprint-grid-columns / 3);
+    @include column($bottom-menu-columns);
+    margin-left: 2.5%;
+    margin-right: 2.5%;    
+  }
+} // end media query above the first breakpoint width
+
+// between the min sensible width and the first breakpoint
+@media all and (max-width: $bp-1-em) {
+  .mainTitleBlock {
+      nav {
+      padding-top: 22px;
+      a {
+        float: left;
+        height: 192px;
+      }
+        a.logo {
+          background: url("../images/title.jpg") no-repeat;
+          background-size: contain;
+          max-width: 232px;
+          width: 73.4375%;
+          margin-left: -117.5px;
+          position: absolute;
+          left: 50%;
+        }
+        .small-menu {
+          margin-top: 190px;
+          text-align: center;
+          ul {
+            @include menu-text-background;
+            height: 20px;            
+          }
+          li {
+            display: inline-block;
+            width: 23%;
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: 1;
+            vertical-align: top;
+            color: $font-color;
+
+          }
+          li.active, li:hover {
+            @include menu-text-active-hover;
+          }
+          li.last {
+              margin-right: 0;
+          }
+          li a {
+            height: 20px;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+          }
+      }
+    }
+  }  
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 100%;
+  }
+  .news {
+    margin-top: 30px;
+  }
+  footer nav.bottom-menu {
+    $bottom-menu-columns: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      width: 100%;
+      border-right: none;
+    }
+  } 
+  footer .copyright {
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;    
+  }
+} // end media query $bp-1-em
+
+
+// at and below the min sensible width
+@media all and (max-width: $bp-min-em) {
+  .mainTitleBlock {
+      nav {
+      padding-top: 22px;
+      a {
+        float: left;
+        height: 192px;
+      }
+        a.logo {
+          background: url("../images/title.jpg") no-repeat;
+          background-size: contain;
+          max-width: 232px;
+          width: 73.4375%;
+          margin-left: -36.7185%;
+          position: absolute;
+          left: 50%;
+        }
+        .small-menu {
+          ul {
+            li {
+              font-size: 0.9em;
+              line-height: 1.25;
+            }
+          }
+        }
+      
+      }
+    }
+  .women, .men, .children, .news, .welcome, .offers {
+    width: 100%;
+  }
+  .news {
+    margin-top: 30px;
+  }
+  footer nav.bottom-menu {
+    $bottom-menu-columns: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      width: 100%;
+    }
+  } 
+  footer .copyright {
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;    
+  }
+} // end media query $bp-min-em
+
+
