@@ -233,23 +233,23 @@ header.mainTitleBlock {
 }
 
 /* line 68, ../sass/screen.scss */
-.women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory {
+.women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs {
   margin-right: 1.30548%;
   float: left;
 }
 
 /* line 73, ../sass/screen.scss */
-.news, .welcome, .offers, .faq, .ourHistory {
+.news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs {
   border-left: 1px solid #303030;
 }
 
 /* line 77, ../sass/screen.scss */
-.offers, .ourHistory {
+.offers, .ourHistory, .contactUs {
   border-right: 1px solid #303030;
 }
 
 /* line 81, ../sass/screen.scss */
-.children, .offers, .ourHistory {
+.children, .offers, .ourHistory, .contactUs {
   margin-right: 0;
 }
 
@@ -500,24 +500,46 @@ img.groups {
   width: 100%;
 }
 
+/* line 288, ../sass/screen.scss */
+.location address {
+  border-left: 5px solid rgba(255, 165, 0, 0.4);
+  font-size: 0.7em;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+/* line 295, ../sass/screen.scss */
+.location .officeContact :first-of-type, .location .faxContact :first-of-type {
+  color: orange;
+}
+/* line 298, ../sass/screen.scss */
+.location .emailContact > a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 302, ../sass/screen.scss */
+.location .emailContact > a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
 @media all and (min-width: 37.5em) {
-  /* line 291, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
     margin: 0 auto;
     max-width: 766px;
   }
-  /* line 295, ../sass/screen.scss */
+  /* line 317, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 300, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu {
     display: none;
     visibility: hidden;
   }
-  /* line 304, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
@@ -525,69 +547,69 @@ img.groups {
     margin-left: 0;
     position: inherit;
   }
-  /* line 311, ../sass/screen.scss */
+  /* line 333, ../sass/screen.scss */
   .mainTitleBlock nav a.home {
     background: url("../images/m1.jpg") no-repeat;
     background-size: contain;
     width: 19.0600%;
   }
-  /* line 316, ../sass/screen.scss */
+  /* line 338, ../sass/screen.scss */
   .mainTitleBlock nav a.home:hover, .mainTitleBlock nav a.home.active, .mainTitleBlock nav a.home:focus {
     background: url("../images/m1m.jpg") no-repeat;
     background-size: contain;
   }
-  /* line 320, ../sass/screen.scss */
+  /* line 342, ../sass/screen.scss */
   .mainTitleBlock nav a.about {
     background: url("../images/m2.jpg") no-repeat;
     background-size: contain;
     width: 16.3185%;
   }
-  /* line 325, ../sass/screen.scss */
+  /* line 347, ../sass/screen.scss */
   .mainTitleBlock nav a.about:hover, .mainTitleBlock nav a.about.active, .mainTitleBlock nav a.about:focus {
     background: url("../images/m2m.jpg") no-repeat;
     background-size: contain;
   }
-  /* line 329, ../sass/screen.scss */
+  /* line 351, ../sass/screen.scss */
   .mainTitleBlock nav a.history {
     background: url("../images/m3.jpg") no-repeat;
     background-size: contain;
     width: 14.2297%;
   }
-  /* line 334, ../sass/screen.scss */
+  /* line 356, ../sass/screen.scss */
   .mainTitleBlock nav a.history:hover, .mainTitleBlock nav a.history.active, .mainTitleBlock nav a.history:focus {
     background: url("../images/m3m.jpg") no-repeat;
     background-size: contain;
   }
-  /* line 338, ../sass/screen.scss */
+  /* line 360, ../sass/screen.scss */
   .mainTitleBlock nav a.contact {
     background: url("../images/m4.jpg") no-repeat;
     background-size: contain;
     width: 19.7128%;
   }
-  /* line 343, ../sass/screen.scss */
+  /* line 365, ../sass/screen.scss */
   .mainTitleBlock nav a.contact:hover, .mainTitleBlock nav a.contact.active, .mainTitleBlock nav a.contact:focus {
     background: url("../images/m4m.jpg") no-repeat;
     background-size: contain;
   }
-  /* line 347, ../sass/screen.scss */
+  /* line 369, ../sass/screen.scss */
   .mainTitleBlock nav span.navSpacer {
     background: url("../images/bgr_lm.jpg") no-repeat;
     background-size: contain;
   }
 
-  /* line 353, ../sass/screen.scss */
-  .women, .men, .children, .news, .welcome, .offers, .faq {
+  /* line 375, ../sass/screen.scss */
+  .women, .men, .children, .news, .welcome, .offers, .faq, .location {
     width: 32.46301%;
     min-height: 200px;
   }
 
-  /* line 359, ../sass/screen.scss */
-  .ourHistory {
+  /* line 381, ../sass/screen.scss */
+  .ourHistory, .contactUs {
     width: 66.23151%;
     min-height: 200px;
   }
 
-  /* line 364, ../sass/screen.scss */
+  /* line 386, ../sass/screen.scss */
   footer nav.bottom-menu {
     width: 66.23151%;
     margin-left: auto;
@@ -596,12 +618,12 @@ img.groups {
     max-width: 480px;
     font-size: 0.9em;
   }
-  /* line 372, ../sass/screen.scss */
+  /* line 394, ../sass/screen.scss */
   footer nav.bottom-menu li {
     border-right: 1px solid #888888;
   }
 
-  /* line 376, ../sass/screen.scss */
+  /* line 398, ../sass/screen.scss */
   footer .copyright {
     width: 32.46301%;
     margin-left: 2.5%;
@@ -611,16 +633,16 @@ img.groups {
   }
 }
 @media all and (max-width: 37.5em) {
-  /* line 389, ../sass/screen.scss */
+  /* line 411, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
   }
-  /* line 391, ../sass/screen.scss */
+  /* line 413, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 395, ../sass/screen.scss */
+  /* line 417, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
@@ -630,12 +652,12 @@ img.groups {
     position: absolute;
     left: 50%;
   }
-  /* line 404, ../sass/screen.scss */
+  /* line 426, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu {
     margin-top: 190px;
     text-align: center;
   }
-  /* line 407, ../sass/screen.scss */
+  /* line 429, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu ul {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzI2ZmIyMyIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -655,7 +677,7 @@ img.groups {
     /* IE6-8 */
     height: 20px;
   }
-  /* line 411, ../sass/screen.scss */
+  /* line 433, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li {
     display: inline-block;
     width: 23%;
@@ -665,7 +687,7 @@ img.groups {
     vertical-align: top;
     color: #cdcdcd;
   }
-  /* line 421, ../sass/screen.scss */
+  /* line 443, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li.active, .mainTitleBlock nav .small-menu li:hover {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDglIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgIDxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iNzglIiBzdG9wLWNvbG9yPSIjMjZmYjIzIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -687,11 +709,11 @@ img.groups {
     text-shadow: 0 0 1px white;
     transition: all 0.3s ease-in-out 0s;
   }
-  /* line 424, ../sass/screen.scss */
+  /* line 446, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li.last {
     margin-right: 0;
   }
-  /* line 427, ../sass/screen.scss */
+  /* line 449, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu li a {
     height: 20px;
     width: 100%;
@@ -700,28 +722,28 @@ img.groups {
     color: inherit;
   }
 
-  /* line 437, ../sass/screen.scss */
-  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory {
+  /* line 459, ../sass/screen.scss */
+  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs {
     width: 100%;
   }
 
-  /* line 440, ../sass/screen.scss */
-  .news, .faq {
+  /* line 462, ../sass/screen.scss */
+  .news, .faq, .location {
     margin-top: 30px;
   }
 
-  /* line 443, ../sass/screen.scss */
+  /* line 465, ../sass/screen.scss */
   footer nav.bottom-menu {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 447, ../sass/screen.scss */
+  /* line 469, ../sass/screen.scss */
   footer nav.bottom-menu li {
     width: 100%;
     border-right: none;
   }
 
-  /* line 452, ../sass/screen.scss */
+  /* line 474, ../sass/screen.scss */
   footer .copyright {
     width: 100%;
     margin-left: 2.5%;
@@ -729,16 +751,16 @@ img.groups {
   }
 }
 @media all and (max-width: 20em) {
-  /* line 463, ../sass/screen.scss */
+  /* line 485, ../sass/screen.scss */
   .mainTitleBlock nav {
     padding-top: 22px;
   }
-  /* line 465, ../sass/screen.scss */
+  /* line 487, ../sass/screen.scss */
   .mainTitleBlock nav a {
     float: left;
     height: 192px;
   }
-  /* line 469, ../sass/screen.scss */
+  /* line 491, ../sass/screen.scss */
   .mainTitleBlock nav a.logo {
     background: url("../images/title.jpg") no-repeat;
     background-size: contain;
@@ -748,33 +770,33 @@ img.groups {
     position: absolute;
     left: 50%;
   }
-  /* line 480, ../sass/screen.scss */
+  /* line 502, ../sass/screen.scss */
   .mainTitleBlock nav .small-menu ul li {
     font-size: 0.9em;
     line-height: 1.25;
   }
 
-  /* line 489, ../sass/screen.scss */
-  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory {
+  /* line 511, ../sass/screen.scss */
+  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs {
     width: 100%;
   }
 
-  /* line 492, ../sass/screen.scss */
-  .news, .faq {
+  /* line 514, ../sass/screen.scss */
+  .news, .faq, .location {
     margin-top: 30px;
   }
 
-  /* line 495, ../sass/screen.scss */
+  /* line 517, ../sass/screen.scss */
   footer nav.bottom-menu {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 499, ../sass/screen.scss */
+  /* line 521, ../sass/screen.scss */
   footer nav.bottom-menu li {
     width: 100%;
   }
 
-  /* line 503, ../sass/screen.scss */
+  /* line 525, ../sass/screen.scss */
   footer .copyright {
     width: 100%;
     margin-left: 2.5%;
