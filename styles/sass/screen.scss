@@ -24,52 +24,15 @@
 /* ===================================================================== */
 
 
-// To configure blueprint, edit the partials/base.sass file.
+// To configure blueprint, edit the partials/_base.sass file.
 @import "partials/base";
 @import "partials/mixins";
-// To generate css equivalent to the blueprint css but with your
-// configuration applied, uncomment:
-// @include blueprint;
-
-// If you are doing a lot of stylesheet concatenation, it is suggested
-// that you scope your blueprint styles, so that you can better control
-// what pages use blueprint when stylesheets are concatenated together.
 @include blueprint-utilities;
-// @include blueprint-typography(false);
-
-body {
-  // @include blueprint-typography(true);
-  // @include blueprint-utilities;
-  // @include blueprint-debug;
-  // @include blueprint-interaction;
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
-}
-
-// Include the grid classes as an example of all calculated widths
-// use the column mixin to create semantic classes and ids
-// @include grid;
-
-// add link icons to all links with .with-icon class
-.with-icon {
-  @include link-icons;
-}
-
-// add buttons  
-//button.bp {
-//  @include button-colors;
-//  @include button-active-colors;
-//  @include button-hover-colors;
-//  @include button-base;
-  // @include anchor-button;
-  // @include button-button;
-//}
 
 * {
   @include box-sizing($box-model);
 }
 body {
-  @include container;
   color: $font-color;
   background: $blueprint-background-color;
   font-family: $blueprint-font-family;
@@ -85,26 +48,50 @@ header.mainTitleBlock {
   height: 192px;
 }
 
-.women, .men, .children, .news, .welcome, .offers {
+.leftbanner {
+    background: url("../../images/bgr_topl.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    float: left;
+    height: 192px;
+    width: calc((100% - 766px) / 2);
+}
+
+.rightbanner {
+    background: url("../../images/bgr_topr.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: right;
+    height: 134px;
+    width: calc((100% - 766px) / 2);
+    margin-top: -22px;
+}
+
+.women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory {
   margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
   float: left;
 }
 
-.news, .welcome, .offers {
+.news, .welcome, .offers, .faq, .ourHistory {
   border-left: 1px solid $blueprint-border-color;
 }
 
-.offers {
+.offers, .ourHistory {
   border-right: 1px solid $blueprint-border-color;
 }
 
-.children, .offers {
+.children, .offers, .ourHistory {
   @include last;
 }
 
+.question a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
 section.content, footer.content {
   margin-left: 3.1331%;
   margin-right: 3.1331%;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 section {
@@ -126,13 +113,16 @@ section header {
     font-weight: bold;
   }
 }
-
+section .ourHistory header {
+  margin-left: 3.5%;
+}
 section article {
   margin-left: 7.78%;
   margin-top: 10px;
   // border-bottom: dotted 1px $blueprint-border-color;
   .date {
     font-size: 0.75em;
+    margin-left: 0;
   }
   p {
     font-size: 0.7em;
@@ -197,7 +187,61 @@ table.offerList {
   }
   
 }
+table.historyList {
+  font-size: 0.7em;
+  margin-top: 10px;
+  padding-bottom: 18px;
+  // border-bottom: dotted 1px $blueprint-border-color;
+  width: 95%;
+  max-width: 437px;
+  margin-left:3.5%;
+  a {
+    color: $font-color;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 
+  tr {
+    height: 20px;
+    td:first-of-type {
+      width: 5.5%;
+    }
+    td.date, td.text, td.readmore {
+      border-right: 3px lighten($blueprint-border-color, 10%) double;
+    }
+    td.date {
+      width: 26.5466%;
+      min-width: 116px;
+    }
+    td.text {
+      width: 53.5469%;
+      max-width: 234px;
+    }
+    td.readmore {
+      width: 15.3318%;
+      min-width: 67px;
+    }
+    .date a, .readmore a {
+      color: #0FD90F;
+    }
+
+  }
+  tr.verticalSpacer {
+    height: 2px;
+  }
+  td.linkIndicator {
+    background: #363636;
+    text-align: right;
+    vertical-align: bottom;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    width: 4.5766%;
+    max-width: 20px;
+  }
+    
+} 
 footer {
   border-top: 3px double $blueprint-border-color;
   margin-top: 20px;
@@ -224,7 +268,6 @@ footer {
     }
   }
   .copyright {
-    float: right;
     font-size: 0.6875em;
     text-align: center;
     padding-top: 15px;
@@ -239,7 +282,6 @@ footer {
 
 img.groups {
   width: 100%;
-  max-width: 234px;
 }
 // Everything below this point must be inside a media query
 
@@ -248,6 +290,8 @@ img.groups {
   .mainTitleBlock {
       nav {
       padding-top: 22px;
+      margin: 0 auto;
+      max-width: 766px;
       a {
         float: left;
         height: 192px;
@@ -306,10 +350,15 @@ img.groups {
         }
     }  
   }
-  .women, .men, .children, .news, .welcome, .offers {
+  .women, .men, .children, .news, .welcome, .offers, .faq {
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
     $sidebar-columns: floor($blueprint-grid-columns / 3);
     @include column($sidebar-columns);
+    min-height: 200px;
+  }
+  .ourHistory {
+    $our-history-columns: 2*(floor($blueprint-grid-columns / 3));
+    @include column($our-history-columns);    
     min-height: 200px;
   }
   footer nav.bottom-menu {
@@ -318,6 +367,8 @@ img.groups {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    max-width: 480px;
+    font-size: 0.9em;
     li {
       border-right: 1px solid $bottom-menu-color
     }
@@ -326,7 +377,9 @@ img.groups {
     $bottom-menu-columns: floor($blueprint-grid-columns / 3);
     @include column($bottom-menu-columns);
     margin-left: 2.5%;
-    margin-right: 2.5%;    
+    margin-right: 2.5%;
+    max-width: 245px; 
+    float: left;   
   }
 } // end media query above the first breakpoint width
 
@@ -381,10 +434,10 @@ img.groups {
       }
     }
   }  
-  .women, .men, .children, .news, .welcome, .offers {
+  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory {
     width: 100%;
   }
-  .news {
+  .news, .faq {
     margin-top: 30px;
   }
   footer nav.bottom-menu {
@@ -433,10 +486,10 @@ img.groups {
       
       }
     }
-  .women, .men, .children, .news, .welcome, .offers {
+  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory {
     width: 100%;
   }
-  .news {
+  .news, .faq {
     margin-top: 30px;
   }
   footer nav.bottom-menu {
