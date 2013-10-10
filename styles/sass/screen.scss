@@ -65,20 +65,20 @@ header.mainTitleBlock {
     margin-top: -22px;
 }
 
-.women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs {
+.women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs, .testimonials, .aboutUs {
   margin-right: ($blueprint-grid-margin/$blueprint-container-size)*100%; 
   float: left;
 }
 
-.news, .welcome, .offers, .faq, .ourHistory, .location ,.contactUs {
+.news, .welcome, .offers, .faq, .ourHistory, .location ,.contactUs, .testimonials, .aboutUs {
   border-left: 1px solid $blueprint-border-color;
 }
 
-.offers, .ourHistory, .contactUs {
+.offers, .ourHistory, .contactUs, .aboutUs {
   border-right: 1px solid $blueprint-border-color;
 }
 
-.children, .offers, .ourHistory, .contactUs {
+.children, .offers, .ourHistory, .contactUs, .aboutUs {
   @include last;
 }
 
@@ -113,6 +113,13 @@ section header {
     font-weight: bold;
   }
 }
+.link:before, .more:before {
+  content: url("../../images/strel.jpg");
+  height: 5px;
+  margin-right: 5px;
+  width: 8px;
+}
+
 section .ourHistory header {
   margin-left: 3.5%;
 }
@@ -282,6 +289,7 @@ footer {
 
 img.groups {
   width: 100%;
+  max-width: 234px;
 }
 
 .location {
@@ -349,7 +357,41 @@ img.groups {
     }
   }
 }
-
+.testimonials, .aboutUs {
+  header {
+    height: 1em;
+    vertical-align: top;
+    margin-left: 10px;
+    h2 {
+      margin-top: 5px;
+    }
+    a {
+      color: #FFFFFF;
+      font-size: 0.7em;
+      font-weight: normal;
+      text-decoration: none;
+      vertical-align: top;
+    }
+  }
+  img.testimonial {
+    padding-top: 5px;
+  }
+  article {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 8px;
+    float: left;
+  }
+}
+.aboutUs {
+  .link {
+    color: white;
+  }  
+  img {
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
 // Everything below this point must be inside a media query
 
 // above the first breakpoint width
@@ -417,13 +459,13 @@ img.groups {
         }
     }  
   }
-  .women, .men, .children, .news, .welcome, .offers, .faq, .location {
+  .women, .men, .children, .news, .welcome, .offers, .faq, .location , .testimonials {
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
     $sidebar-columns: floor($blueprint-grid-columns / 3);
     @include column($sidebar-columns);
     min-height: 200px;
   }
-  .ourHistory, .contactUs {
+  .ourHistory, .contactUs, .aboutUs {
     $our-history-columns: 2*(floor($blueprint-grid-columns / 3));
     @include column($our-history-columns);    
     min-height: 200px;
@@ -501,7 +543,7 @@ img.groups {
       }
     }
   }  
-  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs {
+  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs, .testimonials, .aboutUs {
     width: 100%;
   }
   .news, .faq, .location {
@@ -553,7 +595,7 @@ img.groups {
       
       }
     }
-  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs {
+  .women, .men, .children, .news, .welcome, .offers, .faq, .ourHistory, .location, .contactUs, .testimonials, .aboutUs {
     width: 100%;
   }
   .news, .faq, .location {
