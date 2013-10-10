@@ -98,6 +98,20 @@
 				<header>
 					<h1><span>contact</span><span> us</span></h1>
 				</header>
+		        <form class="contactForm" action=" " method="post"  autocomplete="on">
+		        	<div class="contactDetails">
+						<label for="givenName" >Given Name </label><br /><input type="text" name="givenName" required="required" placeholder="Bruce"/>
+						<label for="familyName" >Family Name </label><br /><input type="text" name="familyName" required="required" placeholder="Lee" />
+						<label for="usermail"> email </label><br /><input type="email" name="usermail" placeholder="no spam from me" required="required"  />
+					</div>
+					<div class="contactMessage">
+						<p> <label for="message"> Message  </label><br /><textarea name="message" placeholder="Enter your message and I'll answer as soon as possible "  required="required" ></textarea> </p>
+					</div>	
+					<div class="contactButtons">
+						<input class="clearButton" type="submit" value="clear" />				
+						<input class="sendButton" type="submit" value="send" />
+					</div>		
+				</form>					
 			</section>
 			<section class="women">
 				<a href="#" title="Womens classes" tabindex="20">
