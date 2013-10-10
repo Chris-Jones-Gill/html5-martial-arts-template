@@ -373,8 +373,9 @@ img.groups {
       vertical-align: top;
     }
   }
-  img.testimonial {
-    padding-top: 5px;
+  img {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   article {
     margin-left: 10px;
@@ -387,10 +388,6 @@ img.groups {
   .link {
     color: white;
   }  
-  img {
-    padding-bottom: 10px;
-    padding-bottom: 10px;
-  }
 }
 // Everything below this point must be inside a media query
 
