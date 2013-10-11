@@ -9,6 +9,8 @@ This is the result of a mini project to convert an old tables-based layout templ
 
 You can view the orignal [here](http://kisswebdesign.co.uk/sample_sites/martial-arts-tables/ "Original table layout template"), and this new one [here](http://kisswebdesign.co.uk/sample_sites/martial-arts-html5/index.html "New HTML5 layout template")
 
+The original template is the 'original' folder.
+
 There is an accompanying blog post [here](http://kisswebdesign.co.uk/Blog/converting-from-a-tables-based-layout-to-html5 "Blog post about this project on KISS Web Design") that gives some more details.
   
 ------------    
