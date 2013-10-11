@@ -4,6 +4,12 @@ About This Project
 This is an example website for a martial arts business from KISS Web Design.  
   
 It is responsive, uses HTML5 and CSS3, and requires SASS and Compass if you want to build it yourself
+
+This is the result of a mini project to convert an old tables-based layout template to a modern HTML5 one.
+
+You can view the orignal [here](http://kisswebdesign.co.uk/sample_sites/martial-arts-tables/ "Original table layout template"), and this new one [here](http://kisswebdesign.co.uk/sample_sites/martial-arts-html5/index.html "New HTML5 layout template")
+
+There is an accompanying blog post [here](http://kisswebdesign.co.uk/Blog/converting-from-a-tables-based-layout-to-html5 "Blog post about this project on KISS Web Design") that gives some more details.
   
 ------------    
   

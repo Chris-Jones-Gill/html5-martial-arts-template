@@ -1,7 +1,7 @@
 /* =====================================================================
  * Project:       Example martial arts website
  * Author:        Chris Jones-Gill - KISS Web Design
- * Version:       1.0.0
+ * Version:       1.0.1
  * Created:       September 2013
  * Copyright:     KISS Web Design - (C) 2013 - All rights reserved
  * Description:   Main stylesheet SASS/Compass for the project
@@ -458,13 +458,13 @@ img.groups {
   }
   .women, .men, .children, .news, .welcome, .offers, .faq, .location , .testimonials {
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns);
+    $basic-column: floor($blueprint-grid-columns / 3);
+    @include column($basic-column);
     min-height: 200px;
   }
   .ourHistory, .contactUs, .aboutUs {
-    $our-history-columns: 2*(floor($blueprint-grid-columns / 3));
-    @include column($our-history-columns);    
+    $two-column-block: 2*(floor($blueprint-grid-columns / 3));
+    @include column($two-column-block);    
     min-height: 200px;
   }
   footer nav.bottom-menu {
